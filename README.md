@@ -13,7 +13,7 @@ Se till att fylla i dokumentationen noga, då den agerar betygsunderlag i den h�
 
 I mappen `dokumentation` hittar ni mappar som heter `vecka-1`, `vecka-2` och `vecka-3`.
 
-På **måndagen** vecka 1 ska ni ta en skärmdump på er initial planering, och lägga in den bilden i mappen.
+På **tisdagen** vecka 1 ska ni ta en skärmdump på er initial planering, och lägga in den bilden i mappen.
 På **fredagen** vecka 1 ska ni ta en skärmdump på hur planeringen ser ut i slutet på veckan, samt hålla ett retrospektiv och dokumentera den.
 
 Vecka 2 och 3 gör ni sedan samma sak.
