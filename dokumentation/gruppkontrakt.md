@@ -76,6 +76,12 @@ Fördela dagarna så jämt det går i gruppen och kom överens om vem som är sc
 
 T.ex. om ni är 4 personer i gruppen så kan en person vara scrum master i 3 dagar, och sedan går turen över till nästa person.
 
+## Kodstandard
+- Hur skriver vi våra commit-meddelanden? Ska vi följa någon särskild standard (t.ex. Conventional Commits eller använda gitmoji).
+- Hur indenterar vi vår kod?
+- Vilket språk använder vi i vår kod, för t.ex. CSS-selektorer?
+- Hur kommenterar vi vår kod?
+
 ## Övrigt
 Om ni vill ta upp någonting utöver det fördefinierade. Skriv gärna en egen rubrik.
 
