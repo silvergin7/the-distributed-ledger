@@ -80,4 +80,4 @@ T.ex. om ni är 4 personer i gruppen så kan en person vara scrum master i 3 dag
 Om ni vill ta upp någonting utöver det fördefinierade. Skriv gärna en egen rubrik.
 
 ## Underskrifter
-- [Förnamn Efternamn](@github-användarnamn)
+- [Förnamn Efternamn](https://github.com/ditt-github-användarnamn)
