@@ -1,10 +1,6 @@
 # Daily Standup: Tisdag
 > Datum: 2025-11-18
 
-- [ ] Fyll i rätt datum här på raden ovanför.
-- [ ] Uppdatera/byt ut skärmdumpen som heter `board-i-borjan-pa-veckan.jpg` med en bild på _er_ board såsom den ser ut när ni startar projektet.
-- [ ] Byt ut namnen och lägg till de som saknas i gruppen, samt fyllt i svar på frågorna.
-
 Dagens scrum master: Kevin
 
 ## Namn: Kevin
