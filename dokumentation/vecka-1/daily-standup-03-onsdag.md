@@ -1,7 +1,7 @@
 # Daily Standup: Onsdag
 > Datum: 2025-11-19
 
-Dagens scrum master: Kevin
+Dagens scrum master: Bengt
 
 ## Namn: Kevin
 - **Idag har jag** Grupparbete med färdigställning av wireframes för PC och mobil. Vi gjorde branch i github, ytterligare planning poker. Uppdaterat daly standup.
