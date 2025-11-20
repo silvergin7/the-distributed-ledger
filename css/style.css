@@ -1,3 +1,49 @@
 body {
   font-family: sans-serif;
 }
+
+.stake {
+  width: 90%;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+  border: 1px solid #bbb;
+  border-radius: 2%;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.stake h2 {
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 120%;
+}
+
+.stake label {
+  display: block;
+  margin-bottom: 4%;
+  font-size: 100%;
+}
+
+.stake select,
+.stake input[type="number"] {
+  width: 100%;
+  padding: 4%;
+  margin-top: 2%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.confirm-btn {
+  display: block;
+  width: 100%;
+  padding: 5%;
+  font-size: 102%;
+  background: #f5f5f5;
+  border: 1px solid #bbb;
+  border-radius: 1rem;
+  cursor: pointer;
+}
