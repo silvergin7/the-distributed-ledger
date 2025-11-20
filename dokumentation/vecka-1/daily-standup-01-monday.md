@@ -3,7 +3,7 @@
 
 
 
-Dagens scrum master: Kevin
+Dagens scrum master: Freddy
 
 ## Namn: Kevin
 - **Idag har jag** Läst igenom modul 1-4 + resterande. Gjort egen wireframe.
