@@ -1,3 +1,55 @@
+/* ----- RESET & GLOBAL STYLES ----- */
+/* Josh Comeau's Modern CSS Reset */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ---------RESET ENDS HERE--------- */
+
 body {
   font-family: sans-serif;
 }
@@ -7,19 +59,19 @@ body {
 
 /*----------NAVIGATION RESPONS & STYLING---------*/
 .menu-bar {
-    display: none;
+  display: none;
 }
 
-.menu-toggle:checked + .hamburger + .menu-bar {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.menu-toggle:checked+.hamburger+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .menu-toggle {
-   position: absolute;
-    opacity: 0;
-    pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 /*----------NAVIGATION RESPONS & STYLING-- END-------*/
@@ -29,34 +81,34 @@ body {
 
 @media screen and (min-width: 960px) {
 
-/*----------NAVIGATION RESPONS & STYLING---------*/
+  /*----------NAVIGATION RESPONS & STYLING---------*/
   .hamburger {
-     display: none;
+    display: none;
   }
 
   .menu-bar {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
-     align-items: center;
-     width: 100%;
-     list-style: none;
-     margin: 0;
-     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
-  .menu-toggle:checked + .hamburger + .menu-bar {
-     display: flex !important;
-     flex-direction: row !important;
-     gap: 0 !important;
+  .menu-toggle:checked+.hamburger+.menu-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
   }
 
   .search-box form {
-     display: flex;
-     align-items: center;
-     gap: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
-/*----------NAVIGATION RESPONS & STYLING-- END-------*/
+
+  /*----------NAVIGATION RESPONS & STYLING-- END-------*/
 
 }
-
