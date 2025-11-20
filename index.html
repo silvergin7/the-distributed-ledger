@@ -12,6 +12,28 @@
 
 <body>
 
+  <header>
+    <h1>RUBRIK</h1>
+  </header>
+  <nav>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+    <ul class="menu-bar">
+      <li><a href="#profile">Profile</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#governance">Governance</a></li>
+      <li><a href="#stake">Stake</a></li>
+      <li><a href="#transfer">Transfer</a></li>
+
+      <li class="search-box">
+        <form role="search">
+          <input type="search" placeholder="Search…" aria-label="Search" />
+          <button class="search-btn" aria-label="Search">🔍</button>
+        </form>
+      </li>
+    </ul>
+  </nav>
 
   <div class="stake-wrapper">
     <section class="stake" aria-label="Stake tokens">
@@ -32,7 +54,6 @@
       <button type="button" class="confirm-btn">Confirm</button>
     </section>
   </div>
-
 </body>
 
 </html>
