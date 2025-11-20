@@ -22,6 +22,25 @@
 
   <p>This is our project page for BCU25D The Distributed Ledger.</p>
   <p>Group members:</p>
+
+  <section class="stake">
+    <h2>Stake</h2>
+    <label>
+      <span>Select action</span>
+      <select name="stake-action">
+        <option value="stake">Stake</option>
+        <option value="unstake">Unstake</option>
+        <option value="restake">Re-stake</option>
+        <option value="claim">Claim</option>
+      </select>
+    </label>
+    <label>
+      <span>Amount (for Stake/Unstake only)</span>
+      <input type="number" min="0" step="any" name="amount" placeholder="Enter amount">
+    </label>
+    <button type="button" class="confirm-btn">Confirm</button>
+  </section>
+
 </body>
 
 </html>
