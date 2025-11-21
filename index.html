@@ -31,7 +31,6 @@
 
   </header>
 
-
   <nav>
     <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
     <div class="nav-left">
@@ -64,6 +63,73 @@
     <div>Staked amount</div>
     <div>Gains</div>
   </article>
+
+
+  <section class="card-portfolio" aria-labelledby="portfolio-title">
+    <div class="card-header">
+      <h2 id="portfolio-title" class="card-title">Portfolio value — last 12 months</h2>
+      <p class="card-subtitle">Includes SOL, USDC, JUP, JLP, WBTC</p>
+    </div>
+
+    <div class="portfolio-layout">
+
+      <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
+        <svg class="chart" viewBox="0 0 100 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <title id="chart-title">Portfolio value over 12 months</title>
+          <desc id="chart-desc">Line rises from $0 to $31,400 with fluctuations.</desc>
+          <polyline fill="none" stroke="#4dd0e1" stroke-width="1.8"
+            points="0,60 10,55 20,50 30,45 40,42 50,38 60,35 70,32 80,28 90,24 100,20" />
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section class="table">
+    <div class="table-wrap" role="region" aria-label="Portfolio breakdown">
+      <table>
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th>Amount</th>
+            <th>Value USD</th>
+            <th>Share %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>SOL</td>
+            <td>620</td>
+            <td>$12,400</td>
+            <td>39.5%</td>
+          </tr>
+          <tr>
+            <td>USDC</td>
+            <td>6,000</td>
+            <td>$6,000</td>
+            <td>19.1%</td>
+          </tr>
+          <tr>
+            <td>JUP</td>
+            <td>8,000</td>
+            <td>$3,200</td>
+            <td>10.2%</td>
+          </tr>
+          <tr>
+            <td>JLP</td>
+            <td>2,000</td>
+            <td>$0</td>
+            <td>0%</td>
+          </tr>
+          <tr>
+            <td>WBTC</td>
+            <td>0.14</td>
+            <td>$9,800</td>
+            <td>31.2%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
   <div class="stake-wrapper">
     <section class="stake" aria-label="Stake tokens">
