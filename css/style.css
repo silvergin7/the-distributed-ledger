@@ -1,3 +1,10 @@
+/* ====== RESET & GLOBAL STYLES ====== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
 /* ----- RESET & GLOBAL STYLES ----- */
 /* Josh Comeau's Modern CSS Reset */
 /* https://www.joshwcomeau.com/css/custom-css-reset/ */
@@ -153,9 +160,156 @@ header {
 /*----------NAVIGATION RESPONS & STYLING-- END-------*/
 
 body {
-  font-family: sans-serif;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background: linear-gradient(180deg, #0d121d, #0e1320);
+  color: #e7ecf5;
+}
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+  overflow-wrap: break-word;
+}
+html, body {
+  height: 100%;
 }
 
+/* ====== THEME VARIABLES ====== */
+:root {
+  --bg: #0e1320;
+  --card: #171d2e;
+  --text: #e7ecf5;
+  --muted: #a8b3cf;
+  --accent: #4dd0e1;
+  --accent-2: #7cb342;
+  --accent-3: #ef5350;
+  --grid: #27324a;
+  --border: #2a3349;
+  --table-row: #192136;
+  --table-row-alt: #1b2440;
+  --shadow: 0 8px 24px rgba(0,0,0,.35);
+}
+
+/* ====== PAGE LAYOUT ====== */
+.page {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 24px;
+}
+
+/* ====== CARD STYLES ====== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.card-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+.card-title {
+  font-weight: 700;
+}
+.card-subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ====== PORTFOLIO LAYOUT ====== */
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  padding: 16px 20px;
+}
+.info-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.info-card {
+  background: var(--table-row);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 1rem;
+  color: var(--text);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+/* ====== CHART STYLES ====== */
+.chart-wrap {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.chart {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+/* ====== TABLE STYLES ====== */
+.table-wrap {
+  margin-top: 16px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead th {
+  background: #1a2034;
+  color: var(--text);
+  padding: 10px;
+  text-align: left;
+  font-weight: 600;
+}
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+tbody tr:nth-child(odd) {
+  background: var(--table-row);
+}
+tbody tr:nth-child(even) {
+  background: var(--table-row-alt);
+}
+td strong {
+  color: var(--accent-2);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .portfolio-layout {
+    grid-template-columns: 1fr;
+  }
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+  .chart-wrap {
+    height: 300px;
+  }
+  .table-wrap {
+    margin-top: 24px;
+    height: 300px;
+    overflow-y: auto;
+  }
 /*----------STAKING SECTION BEGINS---------*/
 
 .stake-wrapper {
