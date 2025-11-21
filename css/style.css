@@ -5,6 +5,160 @@
 * {
   margin: 0;
 }
+/* ----- RESET & GLOBAL STYLES ----- */
+/* Josh Comeau's Modern CSS Reset */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ---------RESET ENDS HERE--------- */
+
+
+/*-----NAVIGATION, HAMBURGER & SEARCH STYLING--------*/
+
+/*----------NAVIGATION RESPONS & STYLING---------*/
+.menu-bar {
+  display: none;
+}
+
+.menu-toggle:checked+.nav-left+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.menu-toggle {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-left>div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/*----NAVIGATION, HAMBURGER & SEARCH STYLING----END----*/
+
+
+
+
+
+
+
+
+/*-----PORTFOLIO BOXES STYLING--------*/
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  justify-items: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.portfolio>div {
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  min-height: 200px;
+  min-height: 200px;
+  max-height: 300px;
+  box-sizing: border-box;
+}
+
+/*-----PORTFOLIO BOXES STYLING---END-----*/
+
+
+
+
+
+
+
+
+
+
+/*---------HEADER STYLING-----------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.user-info-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.market-info-header {
+  display: none;
+}
+
+/*---------HEADER STYLING----END-------*/
+
+
+/*----------NAVIGATION RESPONS & STYLING-- END-------*/
+
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   line-height: 1.5;
@@ -156,4 +310,179 @@ td strong {
     height: 300px;
     overflow-y: auto;
   }
+/*----------STAKING SECTION BEGINS---------*/
+
+.stake-wrapper {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 2%;
+  box-sizing: border-box;
+}
+
+.stake {
+  width: 90%;
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 5%;
+  border: 1px solid #bbb;
+  border-radius: 2%;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.stake h2 {
+  text-align: center;
+  margin-bottom: 3%;
+  font-size: 120%;
+}
+
+.stake label {
+  display: block;
+  margin-bottom: 4%;
+  font-size: 100%;
+}
+
+.stake select,
+.stake input[type="number"] {
+  width: 100%;
+  padding: 4%;
+  margin-top: 2%;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.stake select:focus,
+.stake input[type="number"]:focus,
+.confirm-btn:focus,
+.confirm-btn:hover {
+  outline: 2px solid #3390ff;
+  border-color: #3390ff;
+}
+
+.confirm-btn {
+  display: block;
+  width: 30%;
+  margin: 0 auto;
+  padding: 4%;
+  font-size: 102%;
+  background: #f5f5f5;
+  border: 1px solid #bbb;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+/*----------STAKING SECTION ENDS---------*/
+
+@media screen and (min-width: 960px) {
+
+
+  /*-----NAVIGATION, HAMBURGER & SEARCH STYLING--------*/
+
+  /*----------NAVIGATION RESPONS & STYLING---------*/
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+  }
+
+  .menu-bar {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+
+  .menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-toggle:checked+.hamburger+.menu-bar {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+  }
+
+  .search-box form {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .search-box {
+    margin-left: auto;
+  }
+
+  /*-----NAVIGATION, HAMBURGER & SEARCH STYLING----END----*/
+
+
+
+
+
+
+
+
+
+
+  /*-----PORTFOLIO BOXES STYLING-------*/
+
+  .portfolio {
+    justify-items: start;
+    grid-template-columns: 1fr 1fr;
+    width: 30%;
+    margin: 0;
+  }
+
+  .portfolio>div {
+    text-align: left;
+  }
+
+  /*-----PORTFOLIO BOXES STYLING---END-----*/
+
+
+
+
+
+
+
+
+  /*---------HEADER STYLING-----------*/
+
+  .market-info-header,
+  .user-info-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /*---------HEADER STYLING-----END------*/
+  /*----------NAVIGATION RESPONS & STYLING-- END-------*/
+
 }
