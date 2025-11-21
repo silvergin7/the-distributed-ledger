@@ -65,7 +65,6 @@ body {
 }
 
 .menu-toggle:checked+.nav-left+.menu-bar {
-.menu-toggle:checked+.hamburger+.menu-bar {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -166,7 +165,7 @@ header {
 
 
   /*-----NAVIGATION, HAMBURGER & SEARCH STYLING--------*/
-  
+
   /*----------NAVIGATION RESPONS & STYLING---------*/
   .hamburger {
     display: none;
