@@ -191,9 +191,9 @@ body {
 }
 
 .chart {
-  width: 100%;
   aspect-ratio: 16 / 9;
   display: block;
+  width: 100%;
 }
 
 .table-wrap {
@@ -234,7 +234,7 @@ td strong {
 }
 
 /* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .portfolio-layout {
     grid-template-columns: 1fr;
   }
@@ -248,7 +248,7 @@ td strong {
     height: 300px;
     overflow-y: auto;
   }
-}
+} */
 
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS ENDS---------*/
 
