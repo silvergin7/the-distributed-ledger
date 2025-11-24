@@ -97,10 +97,10 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  justify-items: center;
-  width: 90%;
-  max-width: 400px;
-  margin: 0 auto;
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 12px;
 }
 
 .portfolio>div {
@@ -177,13 +177,16 @@ body {
 }
 
 .portfolio-layout {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 24px;
-  padding: 16px 20px;
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
 }
 
 .chart-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
   padding: 12px;
   border-radius: 12px;
@@ -470,17 +473,24 @@ td strong {
 
 
   /*-----PORTFOLIO BOXES STYLING-------*/
+@media (max-width: 768px) {
+  .portfolio-layout {
+    flex-direction: column; /* staplar rutorna och charten */
+  }
 
-  .portfolio {
+  .portfolio 
+  .chart-wrap { 
     justify-items: start;
     grid-template-columns: 1fr 1fr;
-    width: 30%;
+    width: 100%;
     margin: 0;
   }
 
   .portfolio>div {
-    text-align: left;
+    text-align: center;
+
   }
+} 
 
   /*-----PORTFOLIO BOXES STYLING---END-----*/
 
