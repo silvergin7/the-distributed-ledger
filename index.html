@@ -64,7 +64,6 @@
     <div>Gains</div>
   </article>
 
-
   <section class="card-portfolio" aria-labelledby="portfolio-title">
     <div class="card-header">
       <h2 id="portfolio-title" class="card-title">Portfolio value — last 12 months</h2>
@@ -131,28 +130,65 @@
     </div>
   </section>
 
-  <div class="stake-wrapper">
-    <section class="stake" aria-label="Stake tokens">
-      <h2>Stake</h2>
-      <label>
-        <span>Select action</span>
-        <select name="stake-action">
-          <option value="stake">Stake</option>
-          <option value="unstake">Unstake</option>
-          <option value="restake">Re-stake</option>
-          <option value="claim">Claim</option>
-        </select>
-      </label>
-      <label>
-        <span>Amount (Stake/Unstake only)</span>
-        <input type="number" min="0" step="any" name="amount" placeholder="Enter amount">
-      </label>
-      <button type="button" class="confirm-btn">Confirm</button>
-    </section>
+  <div class="stake-transfer-row">
+    <div class="stake-wrapper">
+      <section class="stake" aria-label="Stake tokens">
+        <h2>Stake</h2>
+        <label>
+          <span>Select action</span>
+          <select name="stake-action">
+            <option value="stake">Stake</option>
+            <option value="unstake">Unstake</option>
+            <option value="restake">Re-stake</option>
+            <option value="claim">Claim</option>
+          </select>
+        </label>
+        <label>
+          <span>Amount (Stake/Unstake only)</span>
+          <input type="number" min="0" step="any" name="amount" placeholder="Enter amount">
+        </label>
+        <button type="button" class="confirm-btn">Confirm</button>
+      </section>
+    </div>
+    <div class="transfer-wrapper">
+      <section class="transfer" aria-label="Transfer tokens">
+        <h2>Transfer</h2>
+        <form>
+          <label>
+            <span>Token</span>
+            <select name="token">
+              <option value="usdc">USDC</option>
+              <option value="wbtc">WBTC</option>
+              <option value="sol">SOL</option>
+              <option value="jup">JUP</option>
+              <option value="jlp">JLP</option>
+            </select>
+          </label>
+          <label>
+            <span>Network</span>
+            <input type="text" name="network" placeholder="e.g. Solana">
+          </label>
+          <label>
+            <span>From</span>
+            <input type="text" name="from" placeholder="Sender address">
+          </label>
+          <label>
+            <span>To</span>
+            <input type="text" name="to" placeholder="Recipient address">
+          </label>
+          <label>
+            <span>Amount</span>
+            <input type="number" name="amount" min="0" step="any" placeholder="Amount">
+          </label>
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </section>
+    </div>
   </div>
 
   <footer>
-    <small> Copyright &copy; 2025 </small>
+    <small> &copy; 2025 The Distributed Ledger &ndash; Built by Liquidated Degens.<br> For educational purposes
+      only.</small>
   </footer>
 
 </body>
