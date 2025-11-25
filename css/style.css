@@ -366,7 +366,7 @@ td strong {
 }
 
 /* Proposal Gallery */
-.proposal-gallery {
+.proposal-active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
