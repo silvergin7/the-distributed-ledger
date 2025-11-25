@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +16,47 @@
   <header>
 
     <section class="market-info-header">
-      <span class="logo-header">Solana</span>
-      <span class="price-header">Price</span>
-      <span class="change-header">24h change</span>
-      <span class="market-cap-header">Market cap</span>
-      <span class="value-header">24h value</span>
+      <div class="solana-logo-header">
+        <img src="css/solana.logo_101x88_.png" alt="Solana logo" width="101" height="88" loading="lazy">
+      </div>
+      <span class="item">
+        <span class="value">Solana</span>
+      </span>
+
+      <span class="item">
+        <span class="label">Price</span>
+        <span class="value">$134.80</span>
+      </span>
+
+      <span class="item">
+        <span class="label">24hr Change</span>
+        <span class="value positive">+5.88%</span>
+      </span>
+
+      <span class="item">
+        <span class="label">Market Cap</span>
+        <span class="value">$76B</span>
+      </span>
+
+      <span class="item">
+        <span class="label">24hr Volume</span>
+        <span class="value">$4.2B</span>
+      </span>
     </section>
 
     <section class="user-info-header">
-      <span class="username-header">Account name</span>
-      <span class="notif-header">Notifications</span>
-      <span class="messages-header">Messages</span>
-      <span class="account-header">Account</span>
+      <span class="username-header">Freddy</span>
+      <div class="top-icons">
+        <button class="icon-btn" aria-label="Open mail">
+          <span class="material-symbols-outlined">mail</span>
+        </button>
+        <button class="icon-btn" aria-label="View notifications">
+          <span class="material-symbols-outlined">notifications_unread</span>
+        </button>
+        <button class="icon-btn" aria-label="Open profile">
+          <span class="material-symbols-outlined">account_circle</span>
+        </button>
+      </div>
     </section>
 
   </header>
