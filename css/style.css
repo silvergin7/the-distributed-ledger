@@ -358,6 +358,7 @@ td strong {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .proposal-card {
