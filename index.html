@@ -57,12 +57,6 @@
     </ul>
   </nav>
 
-  <article class="portfolio">
-    <div>Total value</div>
-    <div>Stake earnings</div>
-    <div>Staked amount</div>
-    <div>Gains</div>
-  </article>
 
   <section class="card-portfolio" aria-labelledby="portfolio-title">
     <div class="card-header">
@@ -71,15 +65,69 @@
     </div>
 
     <div class="portfolio-layout">
+        <article class="portfolio">
+          <div>Total value</div>
+          <div>Stake earnings</div>
+          <div>Staked amount</div>
+          <div>Gains</div>
+        </article>
 
-      <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
-        <svg class="chart" viewBox="0 0 100 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <title id="chart-title">Portfolio value over 12 months</title>
-          <desc id="chart-desc">Line rises from $0 to $31,400 with fluctuations.</desc>
-          <polyline fill="none" stroke="#4dd0e1" stroke-width="1.8"
-            points="0,60 10,55 20,50 30,45 40,42 50,38 60,35 70,32 80,28 90,24 100,20" />
-        </svg>
-      </figure>
+<figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
+  <div class="chart-filters">
+    <button>1D</button>
+    <button>1W</button>
+    <button>1M</button>
+    <button>1Y</button>    
+  </div>
+  <svg class="chart" viewBox="0 0 120 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+
+    <title id="chart-title">Portfolio value over 12 months</title>
+    <desc id="chart-desc">Responsive chart with axes, labels outside the chart area.</desc>
+
+    <!-- Axes -->
+    <line x1="20" y1="10" x2="20" y2="70" stroke="black" stroke-width="0.8"/>
+    <line x1="20" y1="70" x2="110" y2="70" stroke="black" stroke-width="0.8"/>
+
+    <!-- Gridlines -->
+    <line x1="20" y1="55" x2="110" y2="55" stroke="#ccc" stroke-dasharray="1,2"/>
+    <line x1="20" y1="40" x2="110" y2="40" stroke="#ccc" stroke-dasharray="1,2"/>
+    <line x1="20" y1="25" x2="110" y2="25" stroke="#ccc" stroke-dasharray="1,2"/>
+
+    <!-- Y-axis labels (to the left of axis) -->
+    <text x="10" y="70" font-size="4">$0</text>
+    <text x="10" y="55" font-size="4">$10k</text>
+    <text x="10" y="40" font-size="4">$20k</text>
+    <text x="10" y="25" font-size="4">$30k</text>
+    <text x="10" y="10" font-size="4">$60k</text>
+
+    <!-- X-axis labels (below axis) -->
+    <text x="25" y="75" font-size="4">Jan</text>
+    <text x="45" y="75" font-size="4">Mar</text>
+    <text x="65" y="75" font-size="4">Jun</text>
+    <text x="85" y="75" font-size="4">Sep</text>
+    <text x="105" y="75" font-size="4">Nov</text>
+
+    <!-- Coin lines (exempeldata normaliserat) -->
+    <polyline fill="none" stroke="#4dd0e1" stroke-width="1.5"
+      points="20,65 40,50 60,40 80,30 100,20 110,15" />
+    <polyline fill="none" stroke="#ff9800" stroke-width="1.5"
+      points="20,70 40,65 60,60 80,58 100,55 110,55" />
+    <polyline fill="none" stroke="#8bc34a" stroke-width="1.5"
+      points="20,70 40,68 60,66 80,64 100,62 110,60" />
+    <polyline fill="none" stroke="#e91e63" stroke-width="1.5"
+      points="20,68 40,60 60,55 80,50 100,45 110,42" />
+    <polyline fill="none" stroke="#9c27b0" stroke-width="1.5"
+      points="20,70 40,60 60,55 80,50 100,46 110,42" />
+
+    <!-- Legend -->
+    <text x="25" y="8" font-size="4" fill="#4dd0e1">SOL</text>
+    <text x="45" y="8" font-size="4" fill="#ff9800">USDC</text>
+    <text x="65" y="8" font-size="4" fill="#8bc34a">JUP</text>
+    <text x="85" y="8" font-size="4" fill="#e91e63">JLP</text>
+    <text x="105" y="8" font-size="4" fill="#9c27b0">WBTC</text>
+  </svg>
+</figure>
+
     </div>
   </section>
 
@@ -89,41 +137,71 @@
         <thead>
           <tr>
             <th>Coin</th>
-            <th>Amount</th>
+            <th>Total tokens</th>
             <th>Value USD</th>
-            <th>Share %</th>
+            <th>Staked tokens</th>
+            <th>Staked %</th>
+            <th>Stake value</th>
+            <th>Validator</th>
+            <th>Dominance</th>
+            <th>Est. APY</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>SOL</td>
-            <td>620</td>
-            <td>$12,400</td>
-            <td>39.5%</td>
+            <td>1000</td>
+            <td>$58,000</td>
+            <td>647</td>
+            <td>64.7%</td>
+            <td>$37,526</td>
+            <td>mSOL</td>
+            <td>High (Top 25~ 46%)</td>
+            <td>6.8-7.8%</td>
           </tr>
           <tr>
             <td>USDC</td>
-            <td>6,000</td>
-            <td>$6,000</td>
-            <td>19.1%</td>
+            <td>5000</td>
+            <td>$5,000</td>
+            <td>5,000</td>
+            <td>100%</td>
+            <td>$5,000</td>
+            <td>Binance</td>
+            <td>Low (DeFi based)</td>
+            <td>4.7-20%</td>
           </tr>
           <tr>
             <td>JUP</td>
-            <td>8,000</td>
-            <td>$3,200</td>
-            <td>10.2%</td>
+            <td>10,000</td>
+            <td>$1,200</td>
+            <td>4,416</td>
+            <td>44.2%</td>
+            <td>$530</td>
+            <td>Jupiter DAO</td>
+            <td>Medium (441M staked)</td>
+            <td>7-523%</td>
           </tr>
           <tr>
             <td>JLP</td>
-            <td>2,000</td>
-            <td>$0</td>
-            <td>0%</td>
+            <td>500</td>
+            <td>$1,100</td>
+            <td>500</td>
+            <td>100%</td>
+            <td>$1,100</td>
+            <td>Kvants Vault</td>
+            <td>Low (Delta nutral)</td>
+            <td>15-33%</td>
           </tr>
           <tr>
             <td>WBTC</td>
-            <td>0.14</td>
-            <td>$9,800</td>
-            <td>31.2%</td>
+            <td>0.5</td>
+            <td>$18,000</td>
+            <td>0.34</td>
+            <td>68%</td>
+            <td>$12,240</td>
+            <td>BitGo</td>
+            <td>High (DeFi TVL $9.2B)</td>
+            <td>2.5-5.5%</td>
           </tr>
         </tbody>
       </table>
