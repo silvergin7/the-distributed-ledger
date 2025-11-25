@@ -273,7 +273,9 @@ td strong {
   margin-bottom: 1.5rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   border: 1px solid #bbb;
-  margin: 4% 2% 2% 2%;
+  margin: 4% auto 2%;
+  width: 90%;
+  max-width: 500px;
 }
 
 .proposal-detail .proposal-title {
@@ -716,3 +718,25 @@ details[open] summary {
   /*----------NAVIGATION RESPONS & STYLING-- END-------*/
 
 }
+
+/*----------MEDIA QUERY FOR ACTIVE PROPOSALS SECTION BEGINS-------*/
+
+@media (min-width: 800px) {
+  .proposal-active {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: none;
+    max-width: 100%;
+    gap: 1.3rem;
+  }
+
+  .proposal-card {
+    min-height: 120px;
+    font-size: 1.1rem;
+  }
+
+  .proposal-card-content {
+    padding: 1rem 0.5rem;
+  }
+}
+
+/*----------MEDIA QUERY FOR ACTIVE PROPOSALS SECTION ENDS-------*/
