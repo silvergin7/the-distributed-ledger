@@ -51,7 +51,70 @@ h6 {
 /* ---------RESET ENDS HERE--------- */
 
 
-/*-----NAVIGATION, HAMBURGER & SEARCH STYLING--------*/
+
+
+/*-----HEADER + LOGO + MARKET INFO & ICONS--------*/
+
+.user-info-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 4px 20px;
+}
+
+
+.username-header {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+
+.top-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+
+.icon-btn .material-symbols-outlined {
+  font-size: 22px;
+  color: #cccccc;
+  transition: color 0.2s ease;
+}
+
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-btn:hover .material-symbols-outlined {
+  color: #ffffff;
+}
+
+header {
+  background-color: #12161e;
+  border-bottom: 1px solid #222831;
+  padding: 4px 20px;
+  margin-bottom: 10px
+}
+
+
+/*-----HEADER LOGO MARKET INFO & ICONS--ENDS HERE------*/
+
+
+
 
 /*----------NAVIGATION RESPONS & STYLING---------*/
 .menu-bar {
@@ -604,7 +667,51 @@ details[open] summary {
 @media screen and (min-width: 960px) {
 
 
-  /*-----NAVIGATION, HAMBURGER & SEARCH STYLING--------*/
+  /*-----HEADER + LOGO + MARKET INFO & ICONS--------*/
+
+  .market-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4px 0;
+  }
+
+  .solana-logo-header img {
+    width: 20px;
+    height: auto;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .label {
+    font-size: 0.85rem;
+    color: #9aa0a6;
+    font-weight: 400;
+  }
+
+  .value {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .positive {
+    color: #2ecc71;
+  }
+
+  .negative {
+    color: #e74c3c;
+  }
+
+
+  /*-----HEADER + LOGO + MARKET INFO & ICONS--ENDS------*/
+
+
 
   /*----------NAVIGATION RESPONS & STYLING---------*/
   .hamburger {
