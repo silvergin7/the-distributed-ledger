@@ -484,6 +484,22 @@ details[open] summary {
   text-align: center;
 }
 
+.create-proposal button[type="submit"] {
+  background-color: #fff;
+  color: #222;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  padding: 6px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+.create-proposal button[type="submit"]:hover {
+  background-color: #3390ff;
+  border-color: #888;
+}
+
 /*-------------PROPOSAL DETAIL SECTION ENDS---------*/
 
 /*-------------PROPOSAL GALLERY SECTION BEGINS---------*/
