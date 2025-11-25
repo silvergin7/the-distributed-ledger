@@ -365,7 +365,7 @@ td strong {
   font-weight: 500;
 }
 
-/* Proposal Gallery */
+/* Proposal Active Cards */
 .proposal-active {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -419,6 +419,23 @@ td strong {
   font-weight: 600;
   font-size: 1rem;
 }
+
+/*-------------PROPOSAL GALLERY SECTION BEGINS---------*/
+.proposal-gallery {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.proposal-gallery progress {
+  width: 80%;
+  height: 20px;
+  margin-top: 0.4rem;
+  display: inline-block;
+}
+
+/*-------------PROPOSAL GALLERY SECTION ENDS---------*/
+
+
 
 /*----------STAKING SECTION BEGINS---------*/
 
