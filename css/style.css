@@ -281,7 +281,136 @@ td strong {
 
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS ENDS---------*/
 
+/* Proposal Detail Section */
+.proposal-detail {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
 
+.proposal-detail .proposal-title {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.proposal-detail .proposal-vote-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.vote-btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  font-weight: 600;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+.vote-btn.yes {
+  color: green;
+  border-color: green;
+}
+
+.vote-btn.no {
+  color: red;
+  border-color: red;
+}
+
+.vote-btn.abstain {
+  color: goldenrod;
+  border-color: goldenrod;
+}
+
+.vote-btn:hover,
+.vote-btn:focus {
+  background: #3390ff;
+  color: #fff;
+  border-color: #3390ff;
+}
+
+.proposal-progressbar {
+  width: 100%;
+  display: flex;
+  height: 14px;
+  background: #eee;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+.proposal-progressbar .bar {
+  height: 100%;
+  display: block;
+}
+
+.proposal-progressbar .yes {
+  background: #4dd0e1;
+}
+
+.proposal-progressbar .no {
+  background: #ff9800;
+}
+
+.proposal-progressbar .abstain {
+  background: #bbb;
+}
+
+.proposal-vote-count {
+  font-size: 0.96rem;
+  font-weight: 500;
+}
+
+/* Proposal Gallery */
+.proposal-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.proposal-card {
+  background: #f9f9f9;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.proposal-card.active {
+  border-color: #3390ff;
+  box-shadow: 0 0 8px 0 #3390ff33;
+  background: #e7f0ff;
+}
+
+.proposal-card a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 1.1rem 0.6rem;
+  display: block;
+}
+
+.proposal-status {
+  font-size: 0.82rem;
+  color: #3390ff;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.proposal-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
 
 /*----------STAKING SECTION BEGINS---------*/
 
