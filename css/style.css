@@ -193,6 +193,7 @@ body {
   border-radius: 12px;
   border: 1px solid #fff;
 }
+
 .chart-filters {
   display: flex;
   gap: 0.5rem;
@@ -280,6 +281,8 @@ td strong {
 
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS ENDS---------*/
 
+
+
 /*----------STAKING SECTION BEGINS---------*/
 
 .stake-wrapper {
@@ -357,12 +360,14 @@ td strong {
   margin: 0 auto 2rem auto;
   box-sizing: border-box;
 }
+
 .transfer-wrapper {
   width: 100%;
   max-width: 500px;
   padding: 0 2%;
   box-sizing: border-box;
 }
+
 .transfer {
   width: 90%;
   max-width: 90%;
@@ -376,16 +381,19 @@ td strong {
   background: #fff;
   box-sizing: border-box;
 }
+
 .transfer h2 {
   text-align: center;
   margin-bottom: 3%;
   font-size: 120%;
 }
+
 .transfer label {
   display: block;
   margin-bottom: 4%;
   font-size: 100%;
 }
+
 .transfer select,
 .transfer input[type="text"],
 .transfer input[type="number"] {
@@ -395,6 +403,7 @@ td strong {
   font-size: 100%;
   box-sizing: border-box;
 }
+
 .transfer select:focus,
 .transfer input[type="text"]:focus,
 .transfer input[type="number"]:focus,
@@ -403,6 +412,7 @@ td strong {
   outline: 2px solid #3390ff;
   border-color: #3390ff;
 }
+
 .send-btn {
   display: block;
   width: 30%;
@@ -414,6 +424,7 @@ td strong {
   border-radius: 1rem;
   cursor: pointer;
 }
+
 /* Responsive stacking for mobile */
 @media screen and (max-width: 960px) {
   .stake-transfer-row {
@@ -498,24 +509,24 @@ td strong {
 
 
   /*-----PORTFOLIO BOXES STYLING-------*/
-@media (max-width: 768px) {
-  .portfolio-layout {
-    flex-direction: column; /* staplar rutorna och charten */
-  }
+  @media (max-width: 768px) {
+    .portfolio-layout {
+      flex-direction: column;
+      /* staplar rutorna och charten */
+    }
 
-  .portfolio 
-  .chart-wrap { 
-    justify-items: start;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    margin: 0;
-  }
+    .portfolio .chart-wrap {
+      justify-items: start;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      margin: 0;
+    }
 
-  .portfolio>div {
-    text-align: center;
+    .portfolio>div {
+      text-align: center;
 
+    }
   }
-} 
 
   /*-----PORTFOLIO BOXES STYLING---END-----*/
 

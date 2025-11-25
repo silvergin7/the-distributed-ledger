@@ -65,68 +65,63 @@
     </div>
 
     <div class="portfolio-layout">
-        <article class="portfolio">
-          <div>Total value</div>
-          <div>Stake earnings</div>
-          <div>Staked amount</div>
-          <div>Gains</div>
-        </article>
+      <article class="portfolio">
+        <div>Total value</div>
+        <div>Stake earnings</div>
+        <div>Staked amount</div>
+        <div>Gains</div>
+      </article>
 
-<figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
-  <div class="chart-filters">
-    <button>1D</button>
-    <button>1W</button>
-    <button>1M</button>
-    <button>1Y</button>    
-  </div>
-  <svg class="chart" viewBox="0 0 120 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
+        <div class="chart-filters">
+          <button>1D</button>
+          <button>1W</button>
+          <button>1M</button>
+          <button>1Y</button>
+        </div>
+        <svg class="chart" viewBox="0 0 120 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
 
-    <title id="chart-title">Portfolio value over 12 months</title>
-    <desc id="chart-desc">Responsive chart with axes, labels outside the chart area.</desc>
+          <title id="chart-title">Portfolio value over 12 months</title>
+          <desc id="chart-desc">Responsive chart with axes, labels outside the chart area.</desc>
 
-    <!-- Axes -->
-    <line x1="20" y1="10" x2="20" y2="70" stroke="black" stroke-width="0.8"/>
-    <line x1="20" y1="70" x2="110" y2="70" stroke="black" stroke-width="0.8"/>
+          <!-- Axes -->
+          <line x1="20" y1="10" x2="20" y2="70" stroke="black" stroke-width="0.8" />
+          <line x1="20" y1="70" x2="110" y2="70" stroke="black" stroke-width="0.8" />
 
-    <!-- Gridlines -->
-    <line x1="20" y1="55" x2="110" y2="55" stroke="#ccc" stroke-dasharray="1,2"/>
-    <line x1="20" y1="40" x2="110" y2="40" stroke="#ccc" stroke-dasharray="1,2"/>
-    <line x1="20" y1="25" x2="110" y2="25" stroke="#ccc" stroke-dasharray="1,2"/>
+          <!-- Gridlines -->
+          <line x1="20" y1="55" x2="110" y2="55" stroke="#ccc" stroke-dasharray="1,2" />
+          <line x1="20" y1="40" x2="110" y2="40" stroke="#ccc" stroke-dasharray="1,2" />
+          <line x1="20" y1="25" x2="110" y2="25" stroke="#ccc" stroke-dasharray="1,2" />
 
-    <!-- Y-axis labels (to the left of axis) -->
-    <text x="10" y="70" font-size="4">$0</text>
-    <text x="10" y="55" font-size="4">$10k</text>
-    <text x="10" y="40" font-size="4">$20k</text>
-    <text x="10" y="25" font-size="4">$30k</text>
-    <text x="10" y="10" font-size="4">$60k</text>
+          <!-- Y-axis labels (to the left of axis) -->
+          <text x="10" y="70" font-size="4">$0</text>
+          <text x="10" y="55" font-size="4">$10k</text>
+          <text x="10" y="40" font-size="4">$20k</text>
+          <text x="10" y="25" font-size="4">$30k</text>
+          <text x="10" y="10" font-size="4">$60k</text>
 
-    <!-- X-axis labels (below axis) -->
-    <text x="25" y="75" font-size="4">Jan</text>
-    <text x="45" y="75" font-size="4">Mar</text>
-    <text x="65" y="75" font-size="4">Jun</text>
-    <text x="85" y="75" font-size="4">Sep</text>
-    <text x="105" y="75" font-size="4">Nov</text>
+          <!-- X-axis labels (below axis) -->
+          <text x="25" y="75" font-size="4">Jan</text>
+          <text x="45" y="75" font-size="4">Mar</text>
+          <text x="65" y="75" font-size="4">Jun</text>
+          <text x="85" y="75" font-size="4">Sep</text>
+          <text x="105" y="75" font-size="4">Nov</text>
 
-    <!-- Coin lines (exempeldata normaliserat) -->
-    <polyline fill="none" stroke="#4dd0e1" stroke-width="1.5"
-      points="20,65 40,50 60,40 80,30 100,20 110,15" />
-    <polyline fill="none" stroke="#ff9800" stroke-width="1.5"
-      points="20,70 40,65 60,60 80,58 100,55 110,55" />
-    <polyline fill="none" stroke="#8bc34a" stroke-width="1.5"
-      points="20,70 40,68 60,66 80,64 100,62 110,60" />
-    <polyline fill="none" stroke="#e91e63" stroke-width="1.5"
-      points="20,68 40,60 60,55 80,50 100,45 110,42" />
-    <polyline fill="none" stroke="#9c27b0" stroke-width="1.5"
-      points="20,70 40,60 60,55 80,50 100,46 110,42" />
+          <!-- Coin lines (exempeldata normaliserat) -->
+          <polyline fill="none" stroke="#4dd0e1" stroke-width="1.5" points="20,65 40,50 60,40 80,30 100,20 110,15" />
+          <polyline fill="none" stroke="#ff9800" stroke-width="1.5" points="20,70 40,65 60,60 80,58 100,55 110,55" />
+          <polyline fill="none" stroke="#8bc34a" stroke-width="1.5" points="20,70 40,68 60,66 80,64 100,62 110,60" />
+          <polyline fill="none" stroke="#e91e63" stroke-width="1.5" points="20,68 40,60 60,55 80,50 100,45 110,42" />
+          <polyline fill="none" stroke="#9c27b0" stroke-width="1.5" points="20,70 40,60 60,55 80,50 100,46 110,42" />
 
-    <!-- Legend -->
-    <text x="25" y="8" font-size="4" fill="#4dd0e1">SOL</text>
-    <text x="45" y="8" font-size="4" fill="#ff9800">USDC</text>
-    <text x="65" y="8" font-size="4" fill="#8bc34a">JUP</text>
-    <text x="85" y="8" font-size="4" fill="#e91e63">JLP</text>
-    <text x="105" y="8" font-size="4" fill="#9c27b0">WBTC</text>
-  </svg>
-</figure>
+          <!-- Legend -->
+          <text x="25" y="8" font-size="4" fill="#4dd0e1">SOL</text>
+          <text x="45" y="8" font-size="4" fill="#ff9800">USDC</text>
+          <text x="65" y="8" font-size="4" fill="#8bc34a">JUP</text>
+          <text x="85" y="8" font-size="4" fill="#e91e63">JLP</text>
+          <text x="105" y="8" font-size="4" fill="#9c27b0">WBTC</text>
+        </svg>
+      </figure>
 
     </div>
   </section>
@@ -205,6 +200,61 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  </section>
+
+  <section class="proposal-detail" id="activeProposal">
+    <h3 class="proposal-title">Proposal: Upgrade Staking Pool</h3>
+    <p class="proposal-desc">Detailed proposal text goes here. Information, arguments, etc.</p>
+    <div class="proposal-vote-buttons">
+      <button class="vote-btn yes">Yes</button>
+      <button class="vote-btn no">No</button>
+      <button class="vote-btn abstain">Abstain</button>
+    </div>
+    <div class="proposal-progressbar" aria-label="Votes progress">
+      <span class="bar yes" style="width:55%"></span>
+      <span class="bar no" style="width:35%"></span>
+      <span class="bar abstain" style="width:10%"></span>
+    </div>
+    <div class="proposal-vote-count">Total votes: <span>120</span></div>
+  </section>
+
+  <section class="proposal-gallery">
+    <div class="proposal-card active">
+      <a href="#activeProposal" aria-label="Show details for proposal 1">
+        <span class="proposal-status">Active</span>
+        <span class="proposal-title">Upgrade Staking Pool</span>
+      </a>
+    </div>
+    <div class="proposal-card">
+      <a href="#activeProposal" aria-label="Show details for proposal 2">
+        <span class="proposal-status">Active</span>
+        <span class="proposal-title">Enable New Validator</span>
+      </a>
+    </div>
+    <div class="proposal-card">
+      <a href="#activeProposal" aria-label="Show details for proposal 3">
+        <span class="proposal-status">Active</span>
+        <span class="proposal-title">Reduce Fees</span>
+      </a>
+    </div>
+    <div class="proposal-card">
+      <a href="#activeProposal" aria-label="Show details for proposal 4">
+        <span class="proposal-status">Active</span>
+        <span class="proposal-title">Reward LPs</span>
+      </a>
+    </div>
+    <div class="proposal-card">
+      <a href="#activeProposal" aria-label="Show details for proposal 5">
+        <span class="proposal-status">Active</span>
+        <span class="proposal-title">Diversify Treasury</span>
+      </a>
+    </div>
+    <div class="proposal-card">
+      <a href="#activeProposal" aria-label="Show details for proposal 6">
+        <span class="proposal-status">Active</span>
+        <span class="proposal-title">Add New Feature</span>
+      </a>
     </div>
   </section>
 
