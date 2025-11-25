@@ -262,23 +262,6 @@ td strong {
   font-variant-numeric: tabular-nums;
 }
 
-/* ====== RESPONSIVE ====== */
-/*@media (max-width: 768px) {
-  .portfolio-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .chart-wrap {
-    height: 300px;
-  }
-
-  .table-wrap {
-    margin-top: 24px;
-    height: 300px;
-    overflow-y: auto;
-  }
-} */
-
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS ENDS---------*/
 
 /*-------------PROPOSAL DETAIL SECTION BEGINS---------*/
