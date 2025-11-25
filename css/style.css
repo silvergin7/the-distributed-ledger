@@ -281,7 +281,8 @@ td strong {
 
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS ENDS---------*/
 
-/* Proposal Detail Section */
+/*-------------PROPOSAL DETAIL SECTION BEGINS---------*/
+
 .proposal-detail {
   background: #fff;
   border-radius: 10px;
@@ -365,7 +366,10 @@ td strong {
   font-weight: 500;
 }
 
-/* Proposal Active Cards */
+/*-------------PROPOSAL DETAIL SECTION ENDS---------*/
+
+/*-------------PROPOSAL ACTIVE CARDS SECTION BEGINS---------*/
+
 .proposal-active {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -419,6 +423,8 @@ td strong {
   font-weight: 600;
   font-size: 1rem;
 }
+
+/*-------------PROPOSAL ACTIVE CARDS SECTION ENDS---------*/
 
 /*-------------PROPOSAL GALLERY SECTION BEGINS---------*/
 .proposal-gallery {
