@@ -385,6 +385,14 @@ td strong {
   transition: border-color 0.2s, box-shadow 0.2s;
 }
 
+.proposal-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .proposal-card.active {
   border-color: #3390ff;
   box-shadow: 0 0 8px 0 #3390ff33;
