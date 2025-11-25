@@ -4,19 +4,19 @@
 Dagens scrum master: Kevin
 
 ## Namn: Kevin
-- **Idag har jag** Agerat Scrum master, påbörja sprint "Create Proposal"
+- **Idag har jag** Agerat Scrum master, påbörja sprint "Create Proposal". Merge Bengts kod.
 - **Ett problem jag har** Inga problem
 - **Jag behöver hjälp med** Inget
 - **Idag har jag lärt mig** inget
 
 ## Namn: Freddy
-- **Idag har jag** Gjort en lista. 
+- **Idag har jag** Gjort en lista. Review Bengts kod.
 - **Ett problem jag har** Inga problem
 - **Jag behöver hjälp med** Inget
 - **Idag har jag lärt mig** Göra en progress bar.
 
 ## Namn: Tim
-- **Idag har jag** Ska påbörja en section
+- **Idag har jag** Ska påbörja en section. Review Bengts kod.
 - **Ett problem jag har** Inga problem
 - **Jag behöver hjälp med** Inget
 - **Idag har jag lärt mig** Inget
