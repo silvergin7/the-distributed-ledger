@@ -193,6 +193,7 @@ body {
   border-radius: 12px;
   border: 1px solid #fff;
 }
+
 .chart-filters {
   display: flex;
   gap: 0.5rem;
@@ -261,38 +262,190 @@ td strong {
   font-variant-numeric: tabular-nums;
 }
 
-/* ====== RESPONSIVE ====== */
-/*@media (max-width: 768px) {
-  .portfolio-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .chart-wrap {
-    height: 300px;
-  }
-
-  .table-wrap {
-    margin-top: 24px;
-    height: 300px;
-    overflow-y: auto;
-  }
-} */
-
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS ENDS---------*/
 
+/*-------------PROPOSAL ACTIVE CARDS SECTION BEGINS---------*/
+
+.proposal-active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.proposal-card {
+  background: #f9f9f9;
+  border: 2px solid #bbb;
+  border-radius: 8px;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.proposal-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.proposal-card.active {
+  border-color: #3390ff;
+  box-shadow: 0 0 8px 0 #3390ff33;
+  background: #e7f0ff;
+}
+
+.proposal-card a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 1.1rem 0.6rem;
+  display: block;
+}
+
+.proposal-status {
+  font-size: 0.82rem;
+  color: #3390ff;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.proposal-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/*-------------PROPOSAL ACTIVE CARDS SECTION ENDS---------*/
+
+/*-------------PROPOSAL DETAIL SECTION BEGINS---------*/
+
+.proposal-detail {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  border: 1px solid #bbb;
+  margin: 1rem auto 2rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+.proposal-detail .proposal-title {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+details {
+  margin-top: 1rem;
+}
+
+details summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  background: #e7f0ff;
+  border: 1px solid #3390ff;
+  margin-bottom: 0.6rem;
+}
+
+details[open] summary {
+  background: #cce2ff;
+}
+
+.proposal-detail .proposal-vote-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.vote-btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  font-weight: 600;
+  background: #fafafa;
+  transition: 0.2s;
+}
+
+.vote-btn.yes {
+  color: green;
+  border-color: green;
+}
+
+.vote-btn.no {
+  color: red;
+  border-color: red;
+}
+
+.vote-btn.abstain {
+  color: goldenrod;
+  border-color: goldenrod;
+}
+
+.vote-btn:hover,
+.vote-btn:focus {
+  background: #3390ff;
+  color: #fff;
+  border-color: #3390ff;
+}
+
+.proposal-progressbar {
+  width: 100%;
+  display: flex;
+  height: 14px;
+  background: #eee;
+  border-radius: 7px;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+.proposal-progressbar .bar {
+  height: 100%;
+  display: block;
+}
+
+.proposal-progressbar .yes {
+  background: green;
+}
+
+.proposal-progressbar .no {
+  background: red;
+}
+
+.proposal-progressbar .abstain {
+  background: goldenrod;
+}
+
+.proposal-vote-count {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*-------------PROPOSAL DETAIL SECTION ENDS---------*/
 
 /*-------------PROPOSAL GALLERY SECTION BEGINS---------*/
 .proposal-gallery {
-    margin-bottom: 1.5rem;
-    text-align: center;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .proposal-gallery progress {
-    width: 80%;
-    height: 20px;
-    margin-top: 0.4rem;
-    display: inline-block;
+  width: 80%;
+  height: 20px;
+  margin-top: 0.4rem;
+  display: inline-block;
 }
+
 /*-------------PROPOSAL GALLERY SECTION ENDS---------*/
 
 
@@ -374,12 +527,14 @@ td strong {
   margin: 0 auto 2rem auto;
   box-sizing: border-box;
 }
+
 .transfer-wrapper {
   width: 100%;
   max-width: 500px;
   padding: 0 2%;
   box-sizing: border-box;
 }
+
 .transfer {
   width: 90%;
   max-width: 90%;
@@ -393,16 +548,19 @@ td strong {
   background: #fff;
   box-sizing: border-box;
 }
+
 .transfer h2 {
   text-align: center;
   margin-bottom: 3%;
   font-size: 120%;
 }
+
 .transfer label {
   display: block;
   margin-bottom: 4%;
   font-size: 100%;
 }
+
 .transfer select,
 .transfer input[type="text"],
 .transfer input[type="number"] {
@@ -412,6 +570,7 @@ td strong {
   font-size: 100%;
   box-sizing: border-box;
 }
+
 .transfer select:focus,
 .transfer input[type="text"]:focus,
 .transfer input[type="number"]:focus,
@@ -420,6 +579,7 @@ td strong {
   outline: 2px solid #3390ff;
   border-color: #3390ff;
 }
+
 .send-btn {
   display: block;
   width: 30%;
@@ -431,6 +591,7 @@ td strong {
   border-radius: 1rem;
   cursor: pointer;
 }
+
 /* Responsive stacking for mobile */
 @media screen and (max-width: 960px) {
   .stake-transfer-row {
@@ -515,24 +676,24 @@ td strong {
 
 
   /*-----PORTFOLIO BOXES STYLING-------*/
-@media (max-width: 768px) {
-  .portfolio-layout {
-    flex-direction: column; /* staplar rutorna och charten */
-  }
+  @media (max-width: 768px) {
+    .portfolio-layout {
+      flex-direction: column;
+      /* staplar rutorna och charten */
+    }
 
-  .portfolio 
-  .chart-wrap { 
-    justify-items: start;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    margin: 0;
-  }
+    .portfolio .chart-wrap {
+      justify-items: start;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      margin: 0;
+    }
 
-  .portfolio>div {
-    text-align: center;
+    .portfolio>div {
+      text-align: center;
 
+    }
   }
-} 
 
   /*-----PORTFOLIO BOXES STYLING---END-----*/
 
@@ -556,3 +717,25 @@ td strong {
   /*----------NAVIGATION RESPONS & STYLING-- END-------*/
 
 }
+
+/*----------MEDIA QUERY FOR ACTIVE PROPOSALS SECTION BEGINS-------*/
+
+@media (min-width: 800px) {
+  .proposal-active {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: none;
+    max-width: 100%;
+    gap: 1.3rem;
+  }
+
+  .proposal-card {
+    min-height: 120px;
+    font-size: 1.1rem;
+  }
+
+  .proposal-card-content {
+    padding: 1rem 0.5rem;
+  }
+}
+
+/*----------MEDIA QUERY FOR ACTIVE PROPOSALS SECTION ENDS-------*/
