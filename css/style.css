@@ -136,6 +136,48 @@ h6 {
 
 
 /*-----PORTFOLIO BOXES STYLING--------*/
+
+.centered-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.centered-header .card-title {
+  font-size: 2.0rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #172749;
+  margin-bottom: 0.18em;
+  line-height: 1.07;
+  text-align: center;
+  background: linear-gradient(95deg, #46aaff 30%, #3857b5 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.centered-header .card-subtitle {
+  color: #755ed1;
+  font-size: 1.04rem;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.card-header,
+.centered-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -377,17 +419,12 @@ body {
 
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS BEGINS---------*/
 
-.card-header {
-  padding: 16px 20px;
-  border-bottom: 1px solid #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-}
-
 .card-title {
   font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-subtitle {
