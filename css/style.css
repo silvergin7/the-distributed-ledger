@@ -431,6 +431,27 @@ details[open] summary {
   text-align: center;
 }
 
+.voting-power {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding-top: 8px;
+}
+
+.label-voting-power {
+  font-size: 0.9rem;
+  color: #14171b;
+  font-weight: bold;
+}
+
+.value-voting-power {
+  font-size: 1rem;
+  color: #679414;
+  font-weight: 700;
+}
+
 /*-------------PROPOSAL DETAIL SECTION ENDS---------*/
 
 /*-------------PROPOSAL GALLERY SECTION BEGINS---------*/
