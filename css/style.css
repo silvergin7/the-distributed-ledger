@@ -141,9 +141,7 @@ h6 {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   flex: 1;
-  background: #f9f9f9;
   padding: 1rem;
-  border-radius: 12px;
 }
 
 .portfolio>div,
