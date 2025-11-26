@@ -271,6 +271,9 @@ h6 {
   font-size: 1.35rem;
   font-weight: bold;
   margin-bottom: 0.2em;
+}
+
+.stake-earnings-total strong {
   color: #2ea964;
 }
 
@@ -290,6 +293,39 @@ h6 {
   margin-right: 0.1em;
 }
 
+/* Box 4 */
+
+.gains .label {
+  color: #888;
+  font-weight: 600;
+  margin-right: 0.15em;
+}
+
+.gains-realized,
+.gains-unrealized {
+  font-size: 1.1rem;
+  margin: 0.09em 0;
+}
+
+.gains-pos {
+  color: #2ea964;
+  font-weight: bold;
+}
+
+.gains-neg {
+  color: #da4444;
+  font-weight: bold;
+}
+
+.gains-details {
+  margin-top: 0.3em;
+}
+
+.gains-detail {
+  font-size: 0.97em;
+  color: #444;
+  margin: 0.06em 0;
+}
 
 /*-----PORTFOLIO BOXES STYLING---END-----*/
 
