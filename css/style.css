@@ -146,21 +146,22 @@ h6 {
   border-radius: 12px;
 }
 
-.portfolio>div {
-  padding: 1rem;
+.portfolio>div,
+.portfolio-box {
+  padding: 0.7rem 0.3rem;
   background-color: #f0f0f0;
   border-radius: 8px;
   text-align: center;
   width: 100%;
-  max-width: 300px;
-  min-height: 200px;
-  min-height: 200px;
-  max-height: 300px;
+  max-width: 100%;
+  min-height: 120px;
   box-sizing: border-box;
 }
 
+/* Box 1 */
+
 .portfolio-box h3 {
-  font-size: 1.06rem;
+  font-size: 0.98rem;
   font-weight: 600;
   margin-bottom: 0.3em;
 }
@@ -190,6 +191,62 @@ h6 {
 .box-change.negative {
   color: #da4444;
   font-weight: 600;
+}
+
+/* Box 2 */
+
+.staked-amount .box-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.1em;
+}
+
+.staked-amount .box-coin {
+  color: #3390ff;
+  font-size: 1rem;
+}
+
+.box-tvl {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0.4em 0 0.2em 0;
+}
+
+.box-voting {
+  margin-top: 0.2em;
+}
+
+.vote-power-label {
+  font-size: 0.98rem;
+  color: #888;
+  font-weight: 600;
+  margin-right: 0.3em;
+}
+
+.vote-power {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #2ea964;
+  margin-right: 0.25em;
+}
+
+.vote-unit {
+  font-size: 0.98em;
+  color: #3390ff;
+  margin-left: 0.1em;
+}
+
+.vote-share {
+  font-size: 0.97rem;
+  color: #235893;
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+
+.vote-supply-desc {
+  font-size: 0.86rem;
+  color: #999;
+  margin-top: 0.05em;
 }
 
 /*-----PORTFOLIO BOXES STYLING---END-----*/
