@@ -89,17 +89,69 @@
 
 
   <section class="card-portfolio" aria-labelledby="portfolio-title">
-    <div class="card-header">
-      <h2 id="portfolio-title" class="card-title">Portfolio value — last 12 months</h2>
-      <p class="card-subtitle">Includes SOL, USDC, JUP, JLP, WBTC</p>
+    <div class="card-header centered-header">
+      <h2 id="portfolio-title" class="card-title">Portfolio Overview</h2>
+      <p class="card-subtitle">Holdings, earnings, rewards, and performance — live & historical</p>
     </div>
 
     <div class="portfolio-layout">
       <article class="portfolio">
-        <div>Total value</div>
-        <div>Stake earnings</div>
-        <div>Staked amount</div>
-        <div>Gains</div>
+        <div class="portfolio-box total-value">
+          <h3>Total Portfolio Value</h3>
+          <div class="box-value">$59,800 <span class="box-coin">(1,015 SOL)</span></div>
+          <div class="box-change positive">+3.1% (24h)</div>
+          <div class="portfolio-value-details">
+            <div class="value-detail"><span class="label">Tokens:</span> 5</div>
+            <div class="value-detail"><span class="label">Top holding:</span> SOL ($45,800)</div>
+          </div>
+        </div>
+        <div class="portfolio-box staked-amount">
+          <h3>Staked Amount & Voting Power</h3>
+          <div class="box-value">765 <span class="box-coin">SOL</span></div>
+          <div class="box-tvl">TVL: $45,000</div>
+          <div class="box-voting">
+            <span class="vote-power-label">Voting Power:</span>
+            <span class="vote-power">12,550<span class="vote-unit"> VP</span></span>
+            <div class="vote-share">
+              You hold <strong>0.005%</strong> of all voting power in the network
+            </div>
+            <div class="vote-supply-desc">
+              Network voting power total: 250,000,000 VP
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-box stake-earnings">
+          <h3>Stake Earnings</h3>
+          <div class="stake-earnings-total"><strong>$2,120</strong></div>
+          <div class="stake-earnings-details">
+            <div class="earning-detail"><span class="label">7-day avg:</span> $21 (2.6 SOL / day)</div>
+            <div class="earning-detail"><span class="label">30-day avg:</span> $17 (2.1 SOL / day)</div>
+            <div class="earning-detail"><span class="label">Tokens received:</span> 143 SOL</div>
+            <div class="earning-detail"><span class="label">Reward types:</span> SOL, USDC, JLP</div>
+          </div>
+        </div>
+        <div class="portfolio-box gains">
+          <h3>Gains</h3>
+          <div class="gains-realized">
+            <span class="label">Realized Gains:</span>
+            <span class="gains-pos">+$1,420</span>
+          </div>
+          <div class="gains-unrealized">
+            <span class="label">Unrealized Gains:</span>
+            <span class="gains-pos">+$4,100</span>
+          </div>
+          <div class="gains-details">
+            <div class="gains-detail">
+              <span class="label">ROI:</span> 8.2%
+            </div>
+            <div class="gains-detail">
+              <span class="label">Best performer:</span> SOL (+35%)
+            </div>
+            <div class="gains-detail">
+              <span class="label">Worst performer:</span> JLP (-4.7%)
+            </div>
+          </div>
+        </div>
       </article>
 
       <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
@@ -153,6 +205,7 @@
         </svg>
       </figure>
 
+    </div>
     </div>
   </section>
 
