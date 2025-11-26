@@ -273,44 +273,46 @@
       </div>
   </section>
 
-  <section class="proposal-detail" id="activeProposal">
-    <h3 class="proposal-title">Proposal: Upgrade Staking Pool</h3>
-    <p class="proposal-desc"> This proposal suggests upgrading the staking pool protocol to support auto-compounding
-      rewards, aiming to boost earned yields for all participants. The change will enhance efficiency while maintaining
-      existing security standards.
+  <div class="proposal-row">
+    <section class="proposal-detail" id="activeProposal">
+      <h3 class="proposal-title">Proposal: Upgrade Staking Pool</h3>
+      <p class="proposal-desc"> This proposal suggests upgrading the staking pool protocol to support auto-compounding
+        rewards, aiming to boost earned yields for all participants. The change will enhance efficiency while maintaining
+        existing security standards.
 
-    <details>
-      <summary>See more info</summary>
-      <ul>
-        <li>Auto-compounding activated for SOL and USDC staking pools</li>
-        <li>Projected APY increase of 1.5-2.5%</li>
-        <li>No changes to withdrawal fees or pooling mechanics</li>
-        <li>Maintain all existing validator requirements and slashing risks</li>
-      </ul>
-      <p style="margin-top:0.5rem;">
-        Community feedback has been positive, but some members raised concerns about potential performance impacts and
-        transparency on compound intervals.
-      </p>
-    </details>
-    <div class="proposal-vote-buttons">
-      <button class="vote-btn yes">Yes</button>
-      <button class="vote-btn no">No</button>
-      <button class="vote-btn abstain">Abstain</button>
-    </div>
-    <div class="proposal-progressbar" aria-label="Votes progress">
-      <span class="bar yes" style="width:55%"></span>
-      <span class="bar no" style="width:35%"></span>
-      <span class="bar abstain" style="width:10%"></span>
-    </div>
-    <div class="proposal-vote-count">Total votes: <span>120</span></div>
-    <div class="create-proposal" style="min-width:280px; max-width:360px;">
+      <details>
+        <summary>See more info</summary>
+        <ul>
+          <li>Auto-compounding activated for SOL and USDC staking pools</li>
+          <li>Projected APY increase of 1.5-2.5%</li>
+          <li>No changes to withdrawal fees or pooling mechanics</li>
+          <li>Maintain all existing validator requirements and slashing risks</li>
+        </ul>
+        <p style="margin-top:0.5rem;">
+          Community feedback has been positive, but some members raised concerns about potential performance impacts and
+          transparency on compound intervals.
+        </p>
+      </details>
+      <div class="proposal-vote-buttons">
+        <button class="vote-btn yes">Yes</button>
+        <button class="vote-btn no">No</button>
+        <button class="vote-btn abstain">Abstain</button>
+      </div>
+      <div class="proposal-progressbar" aria-label="Votes progress">
+        <span class="bar yes" style="width:55%"></span>
+        <span class="bar no" style="width:35%"></span>
+        <span class="bar abstain" style="width:10%"></span>
+      </div>
+      <div class="proposal-vote-count">Total votes: <span>120</span></div>
+    </section>
+    <section class="create-proposal" style="min-width:280px; max-width:360px;">
       <h3>Create Proposal</h3>
       <label for="proposal-text">Write your proposal</label>
       <textarea id="proposal-text" name="proposal-text" rows="4" cols="30" placeholder="Write your proposal here..."></textarea>
       <br>
       <button type="submit">Submit</button>
-    </div>
-  </section>
+    </section>
+  </div>
 
   <section class="proposal-gallery">
     <h2>Proposal Gallery</h2>
