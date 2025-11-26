@@ -51,7 +51,50 @@ h6 {
 /* ---------RESET ENDS HERE--------- */
 
 
-/*-----NAVIGATION, HAMBURGER & SEARCH STYLING--------*/
+
+
+/*-----HEADER + LOGO + MARKET INFO & ICONS--------*/
+
+.username-header {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.top-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.icon-btn .material-symbols-outlined {
+  font-size: 22px;
+  color: #cccccc;
+  transition: color 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-btn:hover .material-symbols-outlined {
+  color: #ffffff;
+}
+
+
+/*-----HEADER LOGO MARKET INFO & ICONS--ENDS HERE------*/
+
+
+
 
 /*----------NAVIGATION RESPONS & STYLING---------*/
 .menu-bar {
@@ -93,27 +136,235 @@ h6 {
 
 
 /*-----PORTFOLIO BOXES STYLING--------*/
+
+.centered-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.centered-header .card-title {
+  font-size: 2.0rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #172749;
+  margin-bottom: 0.18em;
+  line-height: 1.07;
+  text-align: center;
+  background: linear-gradient(95deg, #46aaff 30%, #3857b5 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.centered-header .card-subtitle {
+  color: #755ed1;
+  font-size: 1.04rem;
+  font-weight: 500;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+
+.card-header,
+.centered-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
 .portfolio {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   flex: 1;
-  background: #f9f9f9;
   padding: 1rem;
-  border-radius: 12px;
 }
 
-.portfolio>div {
-  padding: 1rem;
+.portfolio>div,
+.portfolio-box {
+  padding: 0.7rem 0.3rem;
   background-color: #f0f0f0;
   border-radius: 8px;
   text-align: center;
   width: 100%;
-  max-width: 300px;
-  min-height: 200px;
-  min-height: 200px;
-  max-height: 300px;
+  max-width: 100%;
+  min-height: 120px;
   box-sizing: border-box;
+}
+
+/* Box 1 */
+
+.portfolio-box h3 {
+  font-size: 0.98rem;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.box-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.box-coin {
+  font-size: 1rem;
+  color: #3390ff;
+  margin-left: 0.5em;
+}
+
+.box-change {
+  font-size: 1rem;
+  margin: 0.2em 0 0.4em 0;
+}
+
+.box-change.positive {
+  color: #2ea964;
+  font-weight: 600;
+}
+
+.box-change.negative {
+  color: #da4444;
+  font-weight: 600;
+}
+
+.portfolio-value-details {
+  margin-top: 0.5em;
+}
+
+.value-detail {
+  font-size: 0.96em;
+  color: #444;
+  margin: 0.06em 0;
+}
+
+.value-detail .label {
+  color: #888;
+  font-weight: 600;
+  margin-right: 0.1em;
+}
+
+/* Box 2 */
+
+.staked-amount .box-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.1em;
+}
+
+.staked-amount .box-coin {
+  color: #3390ff;
+  font-size: 1rem;
+}
+
+.box-tvl {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0.4em 0 0.2em 0;
+}
+
+.box-voting {
+  margin-top: 0.2em;
+}
+
+.vote-power-label {
+  font-size: 0.98rem;
+  color: #888;
+  font-weight: 600;
+  margin-right: 0.3em;
+}
+
+.vote-power {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: #2ea964;
+  margin-right: 0.25em;
+}
+
+.vote-unit {
+  font-size: 0.98em;
+  color: #3390ff;
+  margin-left: 0.1em;
+}
+
+.vote-share {
+  font-size: 0.97rem;
+  color: #235893;
+  font-weight: 600;
+  margin-top: 0.2em;
+}
+
+.vote-supply-desc {
+  font-size: 0.86rem;
+  color: #999;
+  margin-top: 0.05em;
+}
+
+/* Box 3 */
+
+.stake-earnings-total {
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+
+.stake-earnings-total strong {
+  color: #2ea964;
+}
+
+.stake-earnings-details {
+  margin-top: 0.3em;
+}
+
+.earning-detail {
+  font-size: 0.97em;
+  color: #444;
+  margin: 0.06em 0;
+}
+
+.earning-detail .label {
+  color: #888;
+  font-weight: 600;
+  margin-right: 0.1em;
+}
+
+/* Box 4 */
+
+.gains .label {
+  color: #888;
+  font-weight: 600;
+  margin-right: 0.15em;
+}
+
+.gains-realized,
+.gains-unrealized {
+  font-size: 1.1rem;
+  margin: 0.09em 0;
+}
+
+.gains-pos {
+  color: #2ea964;
+  font-weight: bold;
+}
+
+.gains-neg {
+  color: #da4444;
+  font-weight: bold;
+}
+
+.gains-details {
+  margin-top: 0.3em;
+}
+
+.gains-detail {
+  font-size: 0.97em;
+  color: #444;
+  margin: 0.06em 0;
 }
 
 /*-----PORTFOLIO BOXES STYLING---END-----*/
@@ -129,11 +380,24 @@ h6 {
 
 /*---------HEADER STYLING-----------*/
 
+.market-info-header {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.1rem 0.3rem;
+  background-color: #12161e;
+  border-bottom: 1px solid #222831;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  margin-bottom: 10px;
+
 }
 
 .user-info-header {
@@ -141,10 +405,7 @@ header {
   align-items: center;
   gap: 1rem;
   margin-left: auto;
-}
-
-.market-info-header {
-  display: none;
+  padding: 0;
 }
 
 /*---------HEADER STYLING----END-------*/
@@ -158,28 +419,17 @@ body {
 
 /*----------PORTFOLIO CHART & HOLDINGS SECTIONS BEGINS---------*/
 
-.card-header {
-  padding: 16px 20px;
-  border-bottom: 1px solid #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px;
-}
-
 .card-title {
   font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-subtitle {
   color: #fff;
   font-size: 0.95rem;
-}
-
-.portfolio-layout {
-  display: flex;
-  gap: 2rem;
-  align-items: stretch;
 }
 
 .chart-wrap {
@@ -331,9 +581,10 @@ td strong {
   padding: 1.2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
   border: 1px solid #bbb;
-  margin: 1rem auto 2rem;
-  width: 90%;
+  margin: 1rem 0 2rem 0;
+  width: 100%;
   max-width: 500px;
+  box-sizing: border-box;
 }
 
 .proposal-detail .proposal-title {
@@ -453,6 +704,70 @@ details[open] summary {
 }
 
 /*-------------PROPOSAL DETAIL SECTION ENDS---------*/
+
+/*-------------CREATE PROPOSAL SECTION BEGINS---------*/
+
+.create-proposal {
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem 0.5rem;
+  font-size: 1.1rem;
+  max-width: 330px;
+  width: 100%;
+  min-height: 120px;
+  box-sizing: border-box;
+  margin: 1rem 0;
+}
+
+.create-proposal h3 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.create-proposal label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.create-proposal textarea {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0.45rem;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  margin-bottom: 0.8rem;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.create-proposal button[type="submit"] {
+  font-size: 1.1rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+
+.create-proposal button[type="submit"]:hover {
+  background: #3390ff;
+  border-color: #888;
+}
+
+.proposal-row {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/*-------------CREATE PROPOSAL SECTION ENDS---------*/
 
 /*-------------PROPOSAL GALLERY SECTION BEGINS---------*/
 .proposal-gallery {
@@ -625,7 +940,55 @@ details[open] summary {
 @media screen and (min-width: 960px) {
 
 
-  /*-----NAVIGATION, HAMBURGER & SEARCH STYLING--------*/
+  /*-----HEADER + LOGO + MARKET INFO & ICONS--------*/
+
+  .market-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+  }
+
+  .solana-logo-header img {
+    width: 20px !important;
+    height: 20px !important;
+    object-fit: contain;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+
+  .label {
+    font-size: 0.85rem;
+    color: #9aa0a6;
+    font-weight: 400;
+  }
+
+
+  .value {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+
+  .positive {
+    color: #2ecc71;
+  }
+
+  .negative {
+    color: #e74c3c;
+  }
+
+
+  /*-----HEADER + LOGO + MARKET INFO & ICONS--ENDS------*/
+
+
 
   /*----------NAVIGATION RESPONS & STYLING---------*/
   .hamburger {
@@ -716,6 +1079,32 @@ details[open] summary {
     }
   }
 
+  @media (min-width: 960px) {
+    .card-portfolio {
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .portfolio-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .portfolio {
+      flex: 1.2 1 0;
+      min-width: 420px;
+    }
+
+    .chart-wrap {
+      flex: 1 1 0;
+      max-width: 560px;
+      margin: 0;
+    }
+  }
+
   /*-----PORTFOLIO BOXES STYLING---END-----*/
 
 
@@ -760,3 +1149,26 @@ details[open] summary {
 }
 
 /*----------MEDIA QUERY FOR ACTIVE PROPOSALS SECTION ENDS-------*/
+
+/*----------MEDIA QUERY FOR CREATE PROPOSAL DETAIL SECTION BEGINS-------*/
+
+@media (min-width: 800px) {
+  .create-proposal {
+    min-width: 0;
+    flex: 2;
+    min-height: 120px;
+    font-size: 1.1rem;
+    max-width: 330px;
+    box-sizing: border-box;
+    margin-left: 1.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .proposal-row {
+    flex-direction: column;
+    gap: 1.3rem;
+    align-items: stretch;
+  }
+}
+/*----------MEDIA QUERY FOR CREATE PROPOSAL DETAIL SECTION ENDS-------*/

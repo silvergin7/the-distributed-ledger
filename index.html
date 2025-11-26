@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our project</title>
+  <title>The Distributed Ledger</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
@@ -15,18 +16,47 @@
   <header>
 
     <section class="market-info-header">
-      <span class="logo-header">Solana</span>
-      <span class="price-header">Price</span>
-      <span class="change-header">24h change</span>
-      <span class="market-cap-header">Market cap</span>
-      <span class="value-header">24h value</span>
+      <div class="solana-logo-header">
+        <img src="css/solana.logo_101x88_.png" alt="Solana logo" width="101" height="88" loading="lazy">
+      </div>
+      <span class="item">
+        <span class="value">Solana</span>
+      </span>
+
+      <span class="item">
+        <span class="label">Price</span>
+        <span class="value">$134.80</span>
+      </span>
+
+      <span class="item">
+        <span class="label">24hr Change</span>
+        <span class="value positive">+5.88%</span>
+      </span>
+
+      <span class="item">
+        <span class="label">Market Cap</span>
+        <span class="value">$76B</span>
+      </span>
+
+      <span class="item">
+        <span class="label">24hr Volume</span>
+        <span class="value">$4.2B</span>
+      </span>
     </section>
 
     <section class="user-info-header">
-      <span class="username-header">Account name</span>
-      <span class="notif-header">Notifications</span>
-      <span class="messages-header">Messages</span>
-      <span class="account-header">Account</span>
+      <span class="username-header">Freddy</span>
+      <div class="top-icons">
+        <button class="icon-btn" aria-label="Open mail">
+          <span class="material-symbols-outlined">mail</span>
+        </button>
+        <button class="icon-btn" aria-label="View notifications">
+          <span class="material-symbols-outlined">notifications_unread</span>
+        </button>
+        <button class="icon-btn" aria-label="Open profile">
+          <span class="material-symbols-outlined">account_circle</span>
+        </button>
+      </div>
     </section>
 
   </header>
@@ -59,17 +89,69 @@
 
 
   <section class="card-portfolio" aria-labelledby="portfolio-title">
-    <div class="card-header">
-      <h2 id="portfolio-title" class="card-title">Portfolio value — last 12 months</h2>
-      <p class="card-subtitle">Includes SOL, USDC, JUP, JLP, WBTC</p>
+    <div class="card-header centered-header">
+      <h2 id="portfolio-title" class="card-title">Portfolio Overview</h2>
+      <p class="card-subtitle">Holdings, earnings, rewards, and performance — live & historical</p>
     </div>
 
     <div class="portfolio-layout">
       <article class="portfolio">
-        <div>Total value</div>
-        <div>Stake earnings</div>
-        <div>Staked amount</div>
-        <div>Gains</div>
+        <div class="portfolio-box total-value">
+          <h3>Total Portfolio Value</h3>
+          <div class="box-value">$59,800 <span class="box-coin">(1,015 SOL)</span></div>
+          <div class="box-change positive">+3.1% (24h)</div>
+          <div class="portfolio-value-details">
+            <div class="value-detail"><span class="label">Tokens:</span> 5</div>
+            <div class="value-detail"><span class="label">Top holding:</span> SOL ($45,800)</div>
+          </div>
+        </div>
+        <div class="portfolio-box staked-amount">
+          <h3>Staked Amount & Voting Power</h3>
+          <div class="box-value">765 <span class="box-coin">SOL</span></div>
+          <div class="box-tvl">TVL: $45,000</div>
+          <div class="box-voting">
+            <span class="vote-power-label">Voting Power:</span>
+            <span class="vote-power">12,550<span class="vote-unit"> VP</span></span>
+            <div class="vote-share">
+              You hold <strong>0.005%</strong> of all voting power in the network
+            </div>
+            <div class="vote-supply-desc">
+              Network voting power total: 250,000,000 VP
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-box stake-earnings">
+          <h3>Stake Earnings</h3>
+          <div class="stake-earnings-total"><strong>$2,120</strong></div>
+          <div class="stake-earnings-details">
+            <div class="earning-detail"><span class="label">7-day avg:</span> $21 (2.6 SOL / day)</div>
+            <div class="earning-detail"><span class="label">30-day avg:</span> $17 (2.1 SOL / day)</div>
+            <div class="earning-detail"><span class="label">Tokens received:</span> 143 SOL</div>
+            <div class="earning-detail"><span class="label">Reward types:</span> SOL, USDC, JLP</div>
+          </div>
+        </div>
+        <div class="portfolio-box gains">
+          <h3>Gains</h3>
+          <div class="gains-realized">
+            <span class="label">Realized Gains:</span>
+            <span class="gains-pos">+$1,420</span>
+          </div>
+          <div class="gains-unrealized">
+            <span class="label">Unrealized Gains:</span>
+            <span class="gains-pos">+$4,100</span>
+          </div>
+          <div class="gains-details">
+            <div class="gains-detail">
+              <span class="label">ROI:</span> 8.2%
+            </div>
+            <div class="gains-detail">
+              <span class="label">Best performer:</span> SOL (+35%)
+            </div>
+            <div class="gains-detail">
+              <span class="label">Worst performer:</span> JLP (-4.7%)
+            </div>
+          </div>
+        </div>
       </article>
 
       <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
@@ -123,6 +205,7 @@
         </svg>
       </figure>
 
+    </div>
     </div>
   </section>
 
@@ -280,6 +363,46 @@
     </div>
     <div class="proposal-vote-count">Total votes: <span>120</span></div>
   </section>
+  <div class="proposal-row">
+    <section class="proposal-detail" id="activeProposal">
+      <h3 class="proposal-title">Proposal: Upgrade Staking Pool</h3>
+      <p class="proposal-desc"> This proposal suggests upgrading the staking pool protocol to support auto-compounding
+        rewards, aiming to boost earned yields for all participants. The change will enhance efficiency while maintaining
+        existing security standards.
+
+      <details>
+        <summary>See more info</summary>
+        <ul>
+          <li>Auto-compounding activated for SOL and USDC staking pools</li>
+          <li>Projected APY increase of 1.5-2.5%</li>
+          <li>No changes to withdrawal fees or pooling mechanics</li>
+          <li>Maintain all existing validator requirements and slashing risks</li>
+        </ul>
+        <p style="margin-top:0.5rem;">
+          Community feedback has been positive, but some members raised concerns about potential performance impacts and
+          transparency on compound intervals.
+        </p>
+      </details>
+      <div class="proposal-vote-buttons">
+        <button class="vote-btn yes">Yes</button>
+        <button class="vote-btn no">No</button>
+        <button class="vote-btn abstain">Abstain</button>
+      </div>
+      <div class="proposal-progressbar" aria-label="Votes progress">
+        <span class="bar yes" style="width:55%"></span>
+        <span class="bar no" style="width:35%"></span>
+        <span class="bar abstain" style="width:10%"></span>
+      </div>
+      <div class="proposal-vote-count">Total votes: <span>120</span></div>
+    </section>
+    <section class="create-proposal" style="min-width:280px; max-width:360px;">
+      <h3>Create Proposal</h3>
+      <label for="proposal-text">Write your proposal</label>
+      <textarea id="proposal-text" name="proposal-text" rows="4" cols="30" placeholder="Write your proposal here..."></textarea>
+      <br>
+      <button type="submit">Submit</button>
+    </section>
+  </div>
 
   <section class="proposal-gallery">
     <h2>Proposal Gallery</h2>
@@ -302,49 +425,49 @@
         <tbody>
           <tr class="passed">
             <td>Proposal 1</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Enable Auto-Compounding for Staking Rewards.</td>
             <td>Passed ✔</td>
           </tr>
 
           <tr class="failed">
             <td>Proposal 2</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Introduce New Network Validator.</td>
             <td>Failed ✖</td>
           </tr>
 
           <tr class="passed">
             <td>Proposal 3</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Reduce Transaction Fees.</td>
             <td>Passed ✔</td>
           </tr>
 
           <tr class="failed">
             <td>Proposal 4</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Reward Liquidity Providers (LPs).</td>
             <td>Failed ✖</td>
           </tr>
 
           <tr class="passed">
             <td>Proposal 5</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Diversify Treasury Holdings.</td>
             <td>Passed ✔</td>
           </tr>
 
           <tr class="passed">
             <td>Proposal 6</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Add Cross-Chain Support.</td>
             <td>Passed ✔</td>
           </tr>
 
           <tr class="failed">
             <td>Proposal 7</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Implement Community Grant Program.</td>
             <td>Failed ✖</td>
           </tr>
 
           <tr class="passed">
             <td>Proposal 8</td>
-            <td>Bla bla bla bla bla.</td>
+            <td>Enhance Voting Transparency.</td>
             <td>Passed ✔</td>
           </tr>
         </tbody>
