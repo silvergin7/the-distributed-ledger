@@ -159,6 +159,39 @@ h6 {
   box-sizing: border-box;
 }
 
+.portfolio-box h3 {
+  font-size: 1.06rem;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.box-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.box-coin {
+  font-size: 1rem;
+  color: #3390ff;
+  margin-left: 0.5em;
+}
+
+.box-change {
+  font-size: 1rem;
+  margin: 0.2em 0 0.4em 0;
+}
+
+.box-change.positive {
+  color: #2ea964;
+  font-weight: 600;
+}
+
+.box-change.negative {
+  color: #da4444;
+  font-weight: 600;
+}
+
 /*-----PORTFOLIO BOXES STYLING---END-----*/
 
 
