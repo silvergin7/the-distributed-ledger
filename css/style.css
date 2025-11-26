@@ -395,12 +395,6 @@ body {
   font-size: 0.95rem;
 }
 
-.portfolio-layout {
-  display: flex;
-  gap: 2rem;
-  align-items: stretch;
-}
-
 .chart-wrap {
   flex: 1;
   display: flex;
@@ -959,6 +953,32 @@ details[open] summary {
     .portfolio>div {
       text-align: center;
 
+    }
+  }
+
+  @media (min-width: 960px) {
+    .card-portfolio {
+      max-width: 1300px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .portfolio-layout {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .portfolio {
+      flex: 1.2 1 0;
+      min-width: 420px;
+    }
+
+    .chart-wrap {
+      flex: 1 1 0;
+      max-width: 560px;
+      margin: 0;
     }
   }
 
