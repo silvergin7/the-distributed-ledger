@@ -1,7 +1,7 @@
 # Daily Standup: Onsdag
 > Datum: 2025-11-26
 
-Frånvarande: Tim
+Frånvarande: 
 
 Dagens scrum master: Kevin
 
@@ -18,7 +18,7 @@ Dagens scrum master: Kevin
 - **Idag har jag lärt mig** Göra sticky header.
 
 ## Namn: Tim
-- **Idag har jag** Frånvarande
+- **Idag har jag** Gjort proposal active och chosen proposal.
 - **Ett problem jag har** Inga problem
 - **Jag behöver hjälp med** Inget
 - **Idag har jag lärt mig** Inget
