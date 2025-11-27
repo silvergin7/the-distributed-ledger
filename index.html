@@ -88,8 +88,10 @@
     </ul>
   </nav>
 
+  <section id="profile">
+  </section>
 
-  <section class="card-portfolio" aria-labelledby="portfolio-title">
+  <section class="card-portfolio" id="portfolio" aria-labelledby="portfolio-title">
     <div class="card-header centered-header">
       <h2 id="portfolio-title" class="card-title">Portfolio Overview</h2>
       <p class="card-subtitle">Holdings, earnings, rewards, and performance — live & historical</p>
@@ -167,31 +169,25 @@
           <title id="chart-title">Portfolio value over 12 months</title>
           <desc id="chart-desc">Responsive chart with axes, labels outside the chart area.</desc>
 
-          <!-- Axes -->
           <line x1="20" y1="10" x2="20" y2="70" stroke="black" stroke-width="0.8" />
           <line x1="20" y1="70" x2="110" y2="70" stroke="black" stroke-width="0.8" />
 
-          <!-- Gridlines -->
           <line x1="20" y1="55" x2="110" y2="55" stroke="#ccc" stroke-dasharray="1,2" />
           <line x1="20" y1="40" x2="110" y2="40" stroke="#ccc" stroke-dasharray="1,2" />
           <line x1="20" y1="25" x2="110" y2="25" stroke="#ccc" stroke-dasharray="1,2" />
 
-          <!-- Y-axis labels (to the left of axis) -->
           <text x="10" y="70" font-size="4">$0</text>
           <text x="10" y="55" font-size="4">$10k</text>
           <text x="10" y="40" font-size="4">$20k</text>
           <text x="10" y="25" font-size="4">$30k</text>
           <text x="10" y="10" font-size="4">$60k</text>
 
-          <!-- X-axis labels (below axis) -->
           <text x="25" y="75" font-size="4">Jan</text>
           <text x="45" y="75" font-size="4">Mar</text>
           <text x="65" y="75" font-size="4">Jun</text>
           <text x="85" y="75" font-size="4">Sep</text>
           <text x="105" y="75" font-size="4">Nov</text>
 
-          <!-- Coin lines (exempeldata normaliserat) -->
-          <!-- Total portfolio line -->
           <polyline fill="none" stroke="#FFD700" stroke-width="2" stroke-dasharray="2,2" points="20,60 40,48 60,38 80,28 100,18 110,12"/> 
           <polyline fill="none" stroke="#4dd0e1" stroke-width="1.5" points="20,65 40,50 60,40 80,30 100,20 110,15" />
           <polyline fill="none" stroke="#ff9800" stroke-width="1.5" points="20,70 40,65 60,60 80,58 100,55 110,55" />
@@ -199,7 +195,6 @@
           <polyline fill="none" stroke="#e91e63" stroke-width="1.5" points="20,68 40,60 60,55 80,50 100,45 110,42" />
           <polyline fill="none" stroke="#9c27b0" stroke-width="1.5" points="20,70 40,60 60,55 80,50 100,46 110,42" />
 
-          <!-- Legend -->
           <text x="25" y="8" font-size="4" fill="#FFD700">Total</text>
           <text x="40" y="8" font-size="4" fill="#4dd0e1">SOL</text>
           <text x="55" y="8" font-size="4" fill="#ff9800">USDC</text>
@@ -213,238 +208,12 @@
     </div>
   </section>
 
-  <section class="table">
-  <div class="table-wrap" role="region" aria-label="Portfolio breakdown">
-    <table>
-      <thead>
-        <tr>
-          <th>Coin</th>
-          <th>Total tokens</th>
-          <th>Value USD</th>
-          <th>Staked tokens</th>
-          <th>Staked %</th>
-          <th>Stake value</th>
-          <th>Validator</th>
-          <th>Dominance</th>
-          <th>Est. APY</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Coin">SOL</td>
-          <td data-label="Total tokens">1000</td>
-          <td data-label="Value USD">$58,000</td>
-          <td data-label="Staked tokens">647</td>
-          <td data-label="Staked %">64.7%</td>
-          <td data-label="Stake value">$37,526</td>
-          <td data-label="Validator">mSOL</td>
-          <td data-label="Dominance">High (Top 25~ 46%)</td>
-          <td data-label="Est. APY">6.8-7.8%</td>
-        </tr>
-        <tr>
-          <td data-label="Coin">USDC</td>
-          <td data-label="Total tokens">5000</td>
-          <td data-label="Value USD">$5,000</td>
-          <td data-label="Staked tokens">5000</td>
-          <td data-label="Staked %">100%</td>
-          <td data-label="Stake value">$5,000</td>
-          <td data-label="Validator">Binance</td>
-          <td data-label="Dominance">Low (DeFi based)</td>
-          <td data-label="Est. APY">4.7-20%</td>
-        </tr>
-        <tr>
-          <td data-label="Coin">JUP</td>
-          <td data-label="Total tokens">10,000</td>
-          <td data-label="Value USD">$1,200</td>
-          <td data-label="Staked tokens">4,416</td>
-          <td data-label="Staked %">44.2%</td>
-          <td data-label="Stake value">$530</td>
-          <td data-label="Validator">Jupiter DAO</td>
-          <td data-label="Dominance">Medium (441M staked)</td>
-          <td data-label="Est. APY">7-523%</td>
-        </tr>
-        <tr>
-          <td data-label="Coin">JLP</td>
-          <td data-label="Total tokens">500</td>
-          <td data-label="Value USD">$1,100</td>
-          <td data-label="Staked tokens">500</td>
-          <td data-label="Staked %">100%</td>
-          <td data-label="Stake value">$1,100</td>
-          <td data-label="Validator">Kvants Vault</td>
-          <td data-label="Dominance">Low (Delta neutral)</td>
-          <td data-label="Est. APY">15-33%</td>
-        </tr>
-        <tr>
-          <td data-label="Coin">WBTC</td>
-          <td data-label="Total tokens">0.5</td>
-          <td data-label="Value USD">$18,000</td>
-          <td data-label="Staked tokens">0.34</td>
-          <td data-label="Staked %">68%</td>
-          <td data-label="Stake value">$12,240</td>
-          <td data-label="Validator">BitGo</td>
-          <td data-label="Dominance">High (DeFi TVL $9.2B)</td>
-          <td data-label="Est. APY">2.5-5.5%</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-
-  <section class="proposal-active">
-    <div class="proposal-card active">
-      <a href="#activeProposal" aria-label="Show details for proposal card 1">
-        <div class="proposal-card-content">
-          <span class="proposal-status">Active</span>
-          <span class="proposal-title">Upgrade Staking Pool</span>
-        </div>
-      </a>
-    </div>
-    <div class="proposal-card">
-      <div class="proposal-card-content">
-        <span class="proposal-status">Active</span>
-        <span class="proposal-title">Enable New Validator</span>
-      </div>
-    </div>
-    <div class="proposal-card">
-      <div class="proposal-card-content">
-        <span class="proposal-status">Active</span>
-        <span class="proposal-title">Reduce Fees</span>
-      </div>
-    </div>
-    <div class="proposal-card">
-      <div class="proposal-card-content">
-        <span class="proposal-status">Active</span>
-        <span class="proposal-title">Reward LPs</span>
-      </div>
-    </div>
-    <div class="proposal-card">
-      <div class="proposal-card-content">
-        <span class="proposal-status">Active</span>
-        <span class="proposal-title">Diversify Treasury</span>
-      </div>
-    </div>
-    <div class="proposal-card">
-      <div class="proposal-card-content">
-        <span class="proposal-status">Active</span>
-        <span class="proposal-title">Add New Feature</span>
-      </div>
+  <section id="governance">
   </section>
-
-  <div class="proposal-row">
-    <section class="proposal-detail" id="activeProposal">
-      <h3 class="proposal-title">Proposal: Upgrade Staking Pool</h3>
-      <p class="proposal-desc"> This proposal suggests upgrading the staking pool protocol to support auto-compounding
-        rewards, aiming to boost earned yields for all participants. The change will enhance efficiency while
-        maintaining
-        existing security standards.
-
-      <details>
-        <summary>See more info</summary>
-        <ul>
-          <li>Auto-compounding activated for SOL and USDC staking pools</li>
-          <li>Projected APY increase of 1.5-2.5%</li>
-          <li>No changes to withdrawal fees or pooling mechanics</li>
-          <li>Maintain all existing validator requirements and slashing risks</li>
-        </ul>
-        <p style="margin-top:0.5rem;">
-          Community feedback has been positive, but some members raised concerns about potential performance impacts and
-          transparency on compound intervals.
-        </p>
-      </details>
-      <div>
-        <span class="voting-power">
-          <span class="label-voting-power">Current Total Voting Power</span>
-          <span class="value-voting-power">2552.00000</span>
-        </span>
-      </div>
-      <div class="proposal-vote-buttons">
-        <button class="vote-btn yes">Yes</button>
-        <button class="vote-btn no">No</button>
-        <button class="vote-btn abstain">Abstain</button>
-      </div>
-      <div class="proposal-progressbar" aria-label="Votes progress">
-        <span class="bar yes" style="width:55%"></span>
-        <span class="bar no" style="width:35%"></span>
-        <span class="bar abstain" style="width:10%"></span>
-      </div>
-      <div class="proposal-vote-count">Total votes: <span>120</span></div>
-    </section>
-    <section class="create-proposal" style="min-width:280px; max-width:360px;">
-      <h3>Create Proposal</h3>
-      <label for="proposal-text">Write your proposal</label>
-      <textarea id="proposal-text" name="proposal-text" rows="4" cols="30"
-        placeholder="Write your proposal here..."></textarea>
-      <br>
-      <button type="submit">Submit</button>
-    </section>
-  </div>
-
-  <section class="proposal-gallery">
-    <h2>Proposal Gallery</h2>
-
-    <label for="proposal-progress">Progress</label>
-    <progress id="proposal-progress" value="5" max="8">62.5%</progress>
-  </section>
-
-  <section class="table">
-  <div class="table-wrap" role="region" aria-label="Proposal history">
-    <table>
-      <thead>
-        <tr>
-          <th>Proposal Name</th>
-          <th>Description</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Proposal Name">Proposal 1</td>
-          <td data-label="Description">Enable Auto-Compounding for Staking Rewards.</td>
-          <td data-label="Status">Passed ✓</td>
-        </tr>
-        <tr>
-          <td data-label="Proposal Name">Proposal 2</td>
-          <td data-label="Description">Introduce New Network Validator.</td>
-          <td data-label="Status">Failed ✗</td>
-        </tr>
-        <tr>
-          <td data-label="Proposal Name">Proposal 3</td>
-          <td data-label="Description">Reduce Transaction Fees.</td>
-          <td data-label="Status">Passed ✓</td>
-        </tr>
-        <tr>
-          <td data-label="Proposal Name">Proposal 4</td>
-          <td data-label="Description">Reward Liquidity Providers (LPs).</td>
-          <td data-label="Status">Failed ✗</td>
-        </tr>
-        <tr>
-          <td data-label="Proposal Name">Proposal 5</td>
-          <td data-label="Description">Diversify Treasury Holdings.</td>
-          <td data-label="Status">Passed ✓</td>
-        </tr>
-        <tr>
-          <td data-label="Proposal Name">Proposal 6</td>
-          <td data-label="Description">Add Cross-Chain Support.</td>
-          <td data-label="Status">Passed ✓</td>
-        </tr>
-        <tr>
-          <td data-label="Proposal Name">Proposal 7</td>
-          <td data-label="Description">Implement Community Grant Program.</td>
-          <td data-label="Status">Failed ✗</td>
-        </tr>
-        <tr>
-          <td data-label="Proposal Name">Proposal 8</td>
-          <td data-label="Description">Enhance Voting Transparency.</td>
-          <td data-label="Status">Passed ✓</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
 
   <div class="stake-transfer-row">
     <div class="stake-wrapper">
-      <section class="stake" aria-label="Stake tokens">
+      <section class="stake" id="stake" aria-label="Stake tokens">
         <h2>Stake</h2>
         <label>
           <span>Select action</span>
@@ -463,7 +232,7 @@
       </section>
     </div>
     <div class="transfer-wrapper">
-      <section class="transfer" aria-label="Transfer tokens">
+      <section class="transfer" id="transfer" aria-label="Transfer tokens">
         <h2>Transfer</h2>
         <form>
           <label>
