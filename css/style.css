@@ -1035,10 +1035,26 @@ footer {
 }
 
 /* ----- RESPONSIVE: MOBILE STACKING ----- */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .stake-transfer-row {
-    flex-direction: column;
-    gap: 0;
+    flex-direction: column;   /* stack Stake and Transfer */
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto 2rem auto;
+  }
+
+  .stake-wrapper,
+  .transfer-wrapper {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .stake,
+  .transfer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;               /* remove side % margins on mobile */
+    padding: 1rem;
   }
 }
 
