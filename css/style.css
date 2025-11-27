@@ -1187,8 +1187,9 @@ details[open] summary {
 
 @media (min-width: 960px) {
   .chart-wrap {
-    max-width: 1000px;       /* ökar hela containerbredden */
-    margin: 0 auto;         /* centrerar charten */    
+    flex: 1 1 0;
+    max-width: none;
+    margin: 0;         /* centrerar charten */    
   }
 
   .chart {
