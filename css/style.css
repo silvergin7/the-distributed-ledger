@@ -207,6 +207,25 @@ nav {
   color: var(--color-text-main);
 }
 
+/* HAMBURGER BUTTON */
+.hamburger {
+  font-size: 2.2rem;
+  padding: 0.4rem 0.6rem; 
+  border-radius: 6px;
+  color: var(--color-text-main);
+  cursor: pointer;
+  display: inline-block;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+
+.hamburger:hover {
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+/* HAMBURGER BUTTON END */
+
 /* ----- NAVIGATION, HAMBURGER & SEARCH STYLING----END ----- */
 
 /* ----- PORTFOLIO BOXES STYLING ----- */
