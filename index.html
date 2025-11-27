@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" aria-label="The Distributed Ledger - Solana Portfolio Dashboard">
 
 <head>
   <meta charset="UTF-8">
@@ -7,13 +7,12 @@
   <title>The Distributed Ledger</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AF%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
-
-  <header>
+  <header role="banner">
 
     <section class="market-info-header">
       <div class="solana-logo-header">
@@ -61,11 +60,11 @@
 
   </header>
 
-  <nav>
+  <nav aria-label="Primary">
     <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
 
     <div class="nav-left">
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">&#9776;</label>
       <div class="brand">
         <img src="css/TDLyes.png" alt="The Distributed Ledger logo" class="brand-logo" width="50" height="44">
         <span class="company-name">The Distributed Ledger</span>
@@ -73,14 +72,14 @@
     </div>
 
     <ul class="menu-bar">
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#governance">Governance</a></li>
-      <li><a href="#stake">Stake</a></li>
-      <li><a href="#transfer">Transfer</a></li>
+      <li><a href="#portfolio" aria-current="page">Portfolio</a></li>
+      <li><a href="#governance" aria-current="page">Governance</a></li>
+      <li><a href="#stake" aria-current="page">Stake</a></li>
+      <li><a href="#transfer" aria-current="page">Transfer</a></li>
 
       <li class="search-box">
-        <form role="search">
-          <input type="search" placeholder="Search…" aria-label="Search" />
+        <form role="search" aria-label="Site search">
+          <input type="search" placeholder="Search…" aria-label="Search">
           <button class="search-btn" aria-label="Search">🔍</button>
         </form>
       </li>
@@ -154,7 +153,7 @@
         </div>
       </article>
 
-      <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
+      <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc chart-table-caption">
         <div class="chart-filters">
           <button>1D</button>
           <button>1W</button>
@@ -358,15 +357,15 @@
             <span class="value-voting-power">2552.00000</span>
           </span>
         </div>
-        <div class="proposal-vote-buttons">
-          <button class="vote-btn yes">Yes</button>
-          <button class="vote-btn no">No</button>
-          <button class="vote-btn abstain">Abstain</button>
+        <div class="proposal-vote-buttons" aria-label="Vote option buttons">
+          <button class="vote-btn yes" aria-label="vote option yes">Yes</button>
+          <button class="vote-btn no" aria-label="vote option no">No</button>
+          <button class="vote-btn abstain" aria-label="vote option abstain">Abstain</button>
         </div>
         <div class="proposal-progressbar" aria-label="Votes progress">
-          <span class="bar yes" style="width:55%"></span>
-          <span class="bar no" style="width:35%"></span>
-          <span class="bar abstain" style="width:10%"></span>
+          <span class="bar yes" style="width:55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></span>
+          <span class="bar no" style="width:35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></span>
+          <span class="bar abstain" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></span>
         </div>
         <div class="proposal-vote-count">Total votes: <span>120</span></div>
       </div>
@@ -384,7 +383,7 @@
     <h2>Proposal Gallery</h2>
 
     <label for="proposal-progress">Progress</label>
-    <progress id="proposal-progress" value="5" max="8">62.5%</progress>
+    <progress id="proposal-progress" value="5" max="8" aria-describedby="progress-help">62.5%</progress>
   </section>
 
   <section class="table">
