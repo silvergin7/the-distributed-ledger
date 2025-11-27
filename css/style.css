@@ -192,11 +192,15 @@ body {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--color-bg-header);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2.5rem;
-  padding: 0 1rem;
+  padding: 0.8rem 1.5rem; 
   border-bottom: 1px solid var(--color-border-strong);
 }
 
