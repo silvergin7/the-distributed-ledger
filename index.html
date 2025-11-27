@@ -45,7 +45,7 @@
     </section>
 
     <section class="user-info-header">
-      <span class="username-header">Freddy</span>
+      <span class="username-header">Awesome User</span>
       <div class="top-icons">
         <button class="icon-btn" aria-label="Open mail">
           <span class="material-symbols-outlined">mail</span>
@@ -63,11 +63,12 @@
 
   <nav>
     <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
+
     <div class="nav-left">
       <label for="menu-toggle" class="hamburger">&#9776;</label>
-      <div>
-        <span class="company-logo">LOGO</span>
-        <span class="company-name">Website Name</span>
+      <div class="brand">
+        <img src="css/TDLyes.png" alt="The Distributed Ledger logo" class="brand-logo" width="50" height="44">
+        <span class="company-name">The Distributed Ledger</span>
       </div>
     </div>
 
@@ -88,7 +89,7 @@
   </nav>
 
 
-  <section class="card-portfolio" aria-labelledby="portfolio-title">
+  <section class="card-portfolio" id="portfolio" aria-labelledby="portfolio-title">
     <div class="card-header centered-header">
       <h2 id="portfolio-title" class="card-title">Portfolio Overview</h2>
       <p class="card-subtitle">Holdings, earnings, rewards, and performance — live & historical</p>
@@ -290,7 +291,7 @@
     </div>
   </section>
 
-  <section class="proposal-active">
+  <section class="proposal-active" id="governance">
     <div class="proposal-card active">
       <a href="#activeProposal" aria-label="Show details for proposal card 1">
         <div class="proposal-card-content">
@@ -445,7 +446,7 @@
 
   <div class="stake-transfer-row">
     <div class="stake-wrapper">
-      <section class="stake" aria-label="Stake tokens">
+      <section class="stake" id="stake" aria-label="Stake tokens">
         <h2>Stake</h2>
         <label>
           <span>Select action</span>
@@ -464,7 +465,7 @@
       </section>
     </div>
     <div class="transfer-wrapper">
-      <section class="transfer" aria-label="Transfer tokens">
+      <section class="transfer" id="transfer" aria-label="Transfer tokens">
         <h2>Transfer</h2>
         <form>
           <label>

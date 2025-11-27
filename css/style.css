@@ -50,6 +50,18 @@ h6 {
 
 /* ---------RESET ENDS HERE--------- */
 
+
+/* ----- SMOOTH SCROLLING & SECTION MARGIN FOR NAV-LINKS----- */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+/* ----- SMOOTH SCROLLING & SECTION MARGIN FOR NAV-LINKS--END--- */
+
 /* ----- ROOT COLOR VARIABLES ----- */
 :root {
   --color-bg-body: #0a0e1a;
@@ -134,6 +146,27 @@ body {
   display: none;
 }
 
+.menu-bar a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg-body);
+  color: var(--color-text-main);
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.menu-bar a:hover,
+.menu-bar a:focus {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff !important;
+}
+
 .menu-toggle:checked+.nav-left+.menu-bar {
   display: flex;
   flex-direction: column;
@@ -156,6 +189,22 @@ body {
   display: flex;
   align-items: center;
   gap: 0.3rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.company-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  /* match menu text size */
+  color: var(--color-text-main);
 }
 
 /* ----- NAVIGATION, HAMBURGER & SEARCH STYLING----END ----- */
@@ -1000,10 +1049,28 @@ footer {
 }
 
 /* ----- RESPONSIVE: MOBILE STACKING ----- */
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 800px) {
   .stake-transfer-row {
     flex-direction: column;
-    gap: 0;
+    /* stack Stake and Transfer */
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto 2rem auto;
+  }
+
+  .stake-wrapper,
+  .transfer-wrapper {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .stake,
+  .transfer {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    /* remove side % margins on mobile */
+    padding: 1rem;
   }
 }
 
@@ -1281,5 +1348,43 @@ footer {
 
   .proposal-vote-section {
     margin-top: 2.5rem;
+  }
+}
+
+/* bransch 44 mobile */
+
+@media (max-width: 960px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    /* left-align contents */
+    padding: 0.5rem 1rem;
+  }
+
+  .hamburger {
+    display: inline-block;
+    /* show hamburger on mobile */
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .menu-bar {
+    display: none;
+    /* hidden by default on mobile */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    /* indented under hamburger */
+  }
+
+  .menu-toggle:checked+.nav-left+.menu-bar {
+    display: flex;
   }
 }
