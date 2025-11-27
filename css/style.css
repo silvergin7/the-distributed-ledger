@@ -1151,3 +1151,56 @@ details[open] summary {
   }
 }
 /*----------MEDIA QUERY FOR CREATE PROPOSAL DETAIL SECTION ENDS-------*/
+
+/*----------Media för mobil version card table och chart-----------*/
+/* ----- RESPONSIVE TABLE TO CARD LAYOUT AND CHART ----- */
+@media (max-width: 768px) {
+  .chart {
+    aspect-ratio: 4 / 3;     /* lite högre på mobil */
+    max-width: 100%;         /* fyller hela bredden */
+  }
+}
+
+@media (min-width: 960px) {
+  .chart-wrap {
+    max-width: 1000px;       /* ökar hela containerbredden */
+    margin: 0 auto;         /* centrerar charten */    
+  }
+
+  .chart {
+    max-width: 1000px;       /* ökar själva SVG-charten */
+    aspect-ratio: 16 / 9;   /* behåller bred layout */
+  }
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 0.8rem;
+    background: #7e7d7d;
+  }
+
+  tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    border: none;
+  }
+
+  tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: black;
+    margin-right: 0.5rem;
+  }
+}
