@@ -1278,4 +1278,8 @@ footer {
   .create-proposal textarea {
     height: 280px;
   }
+
+  .proposal-vote-section {
+    margin-top: 2.5rem;
+  }
 }
