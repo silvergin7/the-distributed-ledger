@@ -707,14 +707,16 @@ details[open] summary {
 }
 
 .create-proposal label {
-  display: block;
+  display: block;  
   margin-bottom: 0.4rem;
   font-size: 1rem;
+  
 }
 
 .create-proposal textarea {
   width: 100%;
-  font-size: 1.1rem;
+  height: 200px;
+  font-size: 1.2rem;
   padding: 0.45rem;
   border-radius: 4px;
   border: 1px solid #bbb;
@@ -1150,6 +1152,7 @@ details[open] summary {
     align-items: stretch;
   }
 }
+
 /*----------MEDIA QUERY FOR CREATE PROPOSAL DETAIL SECTION ENDS-------*/
 
 /*----------Media för mobil version card table och chart-----------*/
