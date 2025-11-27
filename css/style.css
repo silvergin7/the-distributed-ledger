@@ -1128,7 +1128,7 @@ footer {
   /* ----- PORTFOLIO BOXES STYLING ----- */
 
   .card-portfolio {
-    max-width: 1300px;
+    max-width: 1500px;
     margin: 0 auto;
     width: 100%;
   }
@@ -1149,6 +1149,7 @@ footer {
     flex: 1 1 0;
     max-width: 560px;
     margin: 0;
+    margin-top: 1.5rem;
   }
 
   /* ----- PORTFOLIO BOXES STYLING---END ----- */
@@ -1254,6 +1255,8 @@ footer {
   .chart-wrap {
     max-width: 1000px;
     margin: 0 auto;
+    margin-top: 1.2rem;
+    margin-right: 2rem;
   }
 
   .chart {
