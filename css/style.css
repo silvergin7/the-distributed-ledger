@@ -50,6 +50,17 @@ h6 {
 
 /* ---------RESET ENDS HERE--------- */
 
+
+/* ----- SMOOTH SCROLLING & SECTION MARGIN FOR NAV-LINKS----- */
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+/* ----- SMOOTH SCROLLING & SECTION MARGIN FOR NAV-LINKS--END--- */
+
 /* ----- ROOT COLOR VARIABLES ----- */
 :root {
   --color-bg-body: #0a0e1a;
