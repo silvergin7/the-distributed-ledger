@@ -209,7 +209,6 @@
       </figure>
 
     </div>
-    </div>
   </section>
 
   <section class="table">
@@ -327,6 +326,7 @@
         <span class="proposal-status">Active</span>
         <span class="proposal-title">Add New Feature</span>
       </div>
+    </div>
   </section>
 
   <div class="proposal-row">
@@ -357,12 +357,12 @@
             <span class="value-voting-power">2552.00000</span>
           </span>
         </div>
-        <div class="proposal-vote-buttons" aria-label="Vote option buttons">
+        <div class="proposal-vote-buttons">
           <button class="vote-btn yes" aria-label="vote option yes">Yes</button>
           <button class="vote-btn no" aria-label="vote option no">No</button>
           <button class="vote-btn abstain" aria-label="vote option abstain">Abstain</button>
         </div>
-        <div class="proposal-progressbar" aria-label="Votes progress">
+        <div class="proposal-progressbar">
           <span class="bar yes" style="width:55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></span>
           <span class="bar no" style="width:35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></span>
           <span class="bar abstain" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></span>
@@ -490,7 +490,7 @@
           </label>
           <label>
             <span>Amount</span>
-            <input type="number" name="amount" min="0" step="any" placeholder="Amount">
+            <input type="number" name="amount" min="0.5" max="9999" step="any" placeholder="Amount">
           </label>
           <button type="submit" class="send-btn">Send</button>
         </form>
@@ -505,7 +505,7 @@
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Valid CSS!" />
+            alt="Valid CSS!">
     </a>
 </p>
   </footer>
