@@ -447,15 +447,16 @@
     <div class="stake-wrapper">
       <section class="stake" id="stake" aria-label="Stake tokens">
         <h2>Stake</h2>
-        <label for="stake-action">
-          <span>Select action</span>
-          <select name="stake-action">
-            <option value="stake">Stake</option>
-            <option value="unstake">Unstake</option>
-            <option value="restake">Re-stake</option>
-            <option value="claim">Claim</option>
-          </select>
-        </label>
+        <div class="field">
+          <label for="stake-action">Select Action
+            <select name="stake-action">
+              <option value="stake">Stake</option>
+              <option value="unstake">Unstake</option>
+              <option value="restake">Re-stake</option>
+              <option value="claim">Claim</option>
+            </select>
+          </label>
+        </div>
         <label>
           <span>Amount (Stake/Unstake only)</span>
           <input type="number" min="0" step="any" name="amount" placeholder="Enter amount">
@@ -467,20 +468,20 @@
       <section class="transfer" id="transfer" aria-label="Transfer tokens">
         <h2>Transfer</h2>
         <form>
-          <label>
-            <span>Token</span>
-            <select name="token">
-              <option value="usdc">USDC</option>
-              <option value="wbtc">WBTC</option>
-              <option value="sol">SOL</option>
-              <option value="jup">JUP</option>
-              <option value="jlp">JLP</option>
-            </select>
-          </label>
+          <div class="field">
+            <label for="token">Token</label>
+              <select id="token" name="token">
+                <option value="usdc">USDC</option>
+                <option value="wbtc">WBTC</option>
+                <option value="sol">SOL</option>
+                <option value="jup">JUP</option>
+                <option value="jlp">JLP</option>
+              </select>
+          </div>  
           <label for="network">
             <span>Network</span>
             <div class="field">
-              <label for="network">Network <span class="example">(e.g. Solana)</span></label>
+              <label for="network">Network <span class="example"></span></label>
               <input type="text" id="network" name="network" placeholder="e.g. Solana">
             </div>
           </label>
