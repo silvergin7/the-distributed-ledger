@@ -1366,12 +1366,26 @@ footer {
   .proposal-card {
     min-height: 120px;
     font-size: 1.1rem;
+    align-items: stretch;
+  }
+
+  .proposal-card a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
 
   .proposal-card-content {
     padding: 1rem 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
+
 
 /* ----- MEDIA: MOBILE TABLE TO CARD & CHART ----- */
 @media (max-width: 768px) {
