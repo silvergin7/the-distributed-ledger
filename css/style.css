@@ -698,6 +698,8 @@ td strong {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 1.1rem 0.6rem;
+  box-sizing: border-box;
 }
 
 .proposal-card.active {
@@ -711,8 +713,8 @@ td strong {
   color: inherit;
   width: 100%;
   height: 100%;
-  padding: 1.1rem 0.6rem;
   display: block;
+  padding: 0;
 }
 
 .proposal-status {
