@@ -689,6 +689,7 @@ td strong {
   justify-content: center;
   text-align: center;
   transition: border-color 0.2s, box-shadow 0.2s;
+  padding-bottom: 0.4rem;
 }
 
 .proposal-card-content {
@@ -717,7 +718,7 @@ td strong {
 .proposal-status {
   font-size: 0.82rem;
   color: var(--color-primary);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   display: block;
 }
 
@@ -725,6 +726,33 @@ td strong {
   font-weight: 600;
   font-size: 1rem;
   color: var(--color-text-main);
+  margin-bottom: 0.5rem;
+}
+
+.proposal-card-progressbar {
+  width: 85%;
+  height: 8px;
+  background: var(--color-bg-body);
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+}
+
+.proposal-card-progressbar .bar {
+  height: 100%;
+  display: block;
+}
+
+.proposal-card-progressbar .yes {
+  background: var(--color-positive);
+}
+
+.proposal-card-progressbar .no {
+  background: var(--color-negative);
+}
+
+.proposal-card-progressbar .abstain {
+  background: var(--color-warning);
 }
 
 /* ----- PROPOSAL ACTIVE CARDS SECTION ENDS ----- */
