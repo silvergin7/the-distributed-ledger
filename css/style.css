@@ -685,7 +685,7 @@ td strong {
   border-radius: 8px;
   min-height: 80px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   text-align: center;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -695,11 +695,12 @@ td strong {
 .proposal-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1.1rem 0.6rem;
   box-sizing: border-box;
+  height: 100%;
 }
 
 .proposal-card.active {
