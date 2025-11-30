@@ -685,18 +685,22 @@ td strong {
   border-radius: 8px;
   min-height: 80px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   text-align: center;
   transition: border-color 0.2s, box-shadow 0.2s;
+  padding-bottom: 0.4rem;
 }
 
 .proposal-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 1.1rem 0.6rem;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .proposal-card.active {
@@ -710,14 +714,14 @@ td strong {
   color: inherit;
   width: 100%;
   height: 100%;
-  padding: 1.1rem 0.6rem;
   display: block;
+  padding: 0;
 }
 
 .proposal-status {
   font-size: 0.82rem;
   color: var(--color-primary);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
   display: block;
 }
 
@@ -725,6 +729,33 @@ td strong {
   font-weight: 600;
   font-size: 1rem;
   color: var(--color-text-main);
+  margin-bottom: 0.5rem;
+}
+
+.proposal-card-progressbar {
+  width: 85%;
+  height: 8px;
+  background: var(--color-bg-body);
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+}
+
+.proposal-card-progressbar .bar {
+  height: 100%;
+  display: block;
+}
+
+.proposal-card-progressbar .yes {
+  background: var(--color-positive);
+}
+
+.proposal-card-progressbar .no {
+  background: var(--color-negative);
+}
+
+.proposal-card-progressbar .abstain {
+  background: var(--color-warning);
 }
 
 /* ----- PROPOSAL ACTIVE CARDS SECTION ENDS ----- */
@@ -1338,12 +1369,26 @@ footer {
   .proposal-card {
     min-height: 120px;
     font-size: 1.1rem;
+    align-items: stretch;
+  }
+
+  .proposal-card a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
 
   .proposal-card-content {
     padding: 1rem 0.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
+
 
 /* ----- MEDIA: MOBILE TABLE TO CARD & CHART ----- */
 @media (max-width: 768px) {
