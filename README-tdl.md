@@ -98,6 +98,8 @@ The dashboard has four main sections:
 ### Portfolio
 Overview of your holdings. Shows total value, what's staked, how much you're earning daily, and your realized and unrealized gains. All the data is simulated, but it works exactly like it would with real wallet data.
 
+
+
 ### Governance
 Vote on active network proposals. You can see how many votes each option has, create new proposals, and check the history of past proposals. The voting interface shows the breakdown of Yes/No/Abstain votes in real time.
 
