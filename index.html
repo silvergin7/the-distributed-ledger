@@ -167,8 +167,8 @@
           <desc id="chart-desc">Responsive chart with axes, labels outside the chart area.</desc>
 
           <!-- Axes -->
-          <line x1="20" y1="10" x2="20" y2="70" stroke="black" stroke-width="0.8" />
-          <line x1="20" y1="70" x2="110" y2="70" stroke="black" stroke-width="0.8" />
+          <line x1="20" y1="10" x2="20" y2="70" stroke="#3390ff" stroke-width="0.8" />
+          <line x1="20" y1="70" x2="110" y2="70" stroke="#3390ff" stroke-width="0.8" />
 
           <!-- Gridlines -->
           <line x1="20" y1="55" x2="110" y2="55" stroke="#ccc" stroke-dasharray="1,2" />
@@ -176,18 +176,18 @@
           <line x1="20" y1="25" x2="110" y2="25" stroke="#ccc" stroke-dasharray="1,2" />
 
           <!-- Y-axis labels (to the left of axis) -->
-          <text x="10" y="70" font-size="4">$0</text>
-          <text x="10" y="55" font-size="4">$10k</text>
-          <text x="10" y="40" font-size="4">$20k</text>
-          <text x="10" y="25" font-size="4">$30k</text>
-          <text x="10" y="10" font-size="4">$60k</text>
+          <text x="10" y="70" font-size="4" fill="#3390ff">$0</text>
+          <text x="10" y="55" font-size="4" fill="#3390ff">$10k</text>
+          <text x="10" y="40" font-size="4" fill="#3390ff">$20k</text>
+          <text x="10" y="25" font-size="4" fill="#3390ff">$30k</text>
+          <text x="10" y="10" font-size="4" fill="#3390ff">$60k</text>
 
           <!-- X-axis labels (below axis) -->
-          <text x="25" y="75" font-size="4">Jan</text>
-          <text x="45" y="75" font-size="4">Mar</text>
-          <text x="65" y="75" font-size="4">Jun</text>
-          <text x="85" y="75" font-size="4">Sep</text>
-          <text x="105" y="75" font-size="4">Nov</text>
+          <text x="25" y="75" font-size="4" fill="#3390ff">Jan</text>
+          <text x="45" y="75" font-size="4" fill="#3390ff">Mar</text>
+          <text x="65" y="75" font-size="4" fill="#3390ff">Jun</text>
+          <text x="85" y="75" font-size="4" fill="#3390ff">Sep</text>
+          <text x="105" y="75" font-size="4" fill="#3390ff">Nov</text>
 
           <!-- Coin lines (exempeldata normaliserat) -->
           <!-- Total portfolio line -->
@@ -295,6 +295,11 @@
         <div class="proposal-card-content">
           <span class="proposal-status">Active</span>
           <span class="proposal-title">Upgrade Staking Pool</span>
+          <div class="proposal-card-progressbar" aria-label="Voting breakdown for Upgrade Staking Pool">
+            <span class="bar yes" style="width:55%"></span>
+            <span class="bar no" style="width:35%"></span>
+            <span class="bar abstain" style="width:10%"></span>
+          </div>
         </div>
       </a>
     </div>
@@ -302,30 +307,55 @@
       <div class="proposal-card-content">
         <span class="proposal-status">Active</span>
         <span class="proposal-title">Enable New Validator</span>
+        <div class="proposal-card-progressbar" aria-label="Voting breakdown for Enable New Validator">
+          <span class="bar yes" style="width:50%"></span>
+          <span class="bar no" style="width:35%"></span>
+          <span class="bar abstain" style="width:15%"></span>
+        </div>
       </div>
     </div>
     <div class="proposal-card">
       <div class="proposal-card-content">
         <span class="proposal-status">Active</span>
         <span class="proposal-title">Reduce Fees</span>
+        <div class="proposal-card-progressbar" aria-label="Voting breakdown for Reduce Fees">
+          <span class="bar yes" style="width:60%"></span>
+          <span class="bar no" style="width:25%"></span>
+          <span class="bar abstain" style="width:15%"></span>
+        </div>
       </div>
     </div>
     <div class="proposal-card">
       <div class="proposal-card-content">
         <span class="proposal-status">Active</span>
         <span class="proposal-title">Reward LPs</span>
+        <div class="proposal-card-progressbar" aria-label="Voting breakdown for Reward LPs">
+          <span class="bar yes" style="width:45%"></span>
+          <span class="bar no" style="width:40%"></span>
+          <span class="bar abstain" style="width:15%"></span>
+        </div>
       </div>
     </div>
     <div class="proposal-card">
       <div class="proposal-card-content">
         <span class="proposal-status">Active</span>
         <span class="proposal-title">Diversify Treasury</span>
+        <div class="proposal-card-progressbar" aria-label="Voting breakdown for Diversify Treasury">
+          <span class="bar yes" style="width:70%"></span>
+          <span class="bar no" style="width:20%"></span>
+          <span class="bar abstain" style="width:10%"></span>
+        </div>
       </div>
     </div>
     <div class="proposal-card">
       <div class="proposal-card-content">
         <span class="proposal-status">Active</span>
         <span class="proposal-title">Add New Feature</span>
+        <div class="proposal-card-progressbar" aria-label="Voting breakdown for Add New Feature">
+          <span class="bar yes" style="width:35%"></span>
+          <span class="bar no" style="width:50%"></span>
+          <span class="bar abstain" style="width:15%"></span>
+        </div>
       </div>
     </div>
   </section>
@@ -371,6 +401,18 @@
         <div class="proposal-vote-count">Total votes: <span>120</span></div>
       </div>
     </section>
+
+    <div class="vote-popup-overlay" style="display: none;">
+      <div class="vote-popup">
+        <div class="vote-popup-title">Do you want to continue voting?</div>
+
+        <div class="vote-popup-actions">
+          <button class="vote-popup-btn confirm">Continue</button>
+          <button class="vote-popup-btn cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+
     <section class="create-proposal">
       <h3>Create Proposal</h3>
       <label for="proposal-text"></label>
