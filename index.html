@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" aria-label="The Distributed Ledger - Solana Portfolio Dashboard">
 
 <head>
   <meta charset="UTF-8">
@@ -7,13 +7,12 @@
   <title>The Distributed Ledger</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AF%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 
 <body>
-
-  <header>
+  <header role="banner">
 
     <section class="market-info-header">
       <div class="solana-logo-header">
@@ -61,11 +60,11 @@
 
   </header>
 
-  <nav>
+  <nav aria-label="Primary">
     <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Open menu">
 
     <div class="nav-left">
-      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <label for="menu-toggle" class="hamburger" aria-label="Toggle menu">&#9776;</label>
       <div class="brand">
         <img src="css/TDLyes.png" alt="The Distributed Ledger logo" class="brand-logo" width="50" height="44">
         <span class="company-name">The Distributed Ledger</span>
@@ -73,14 +72,15 @@
     </div>
 
     <ul class="menu-bar">
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#governance">Governance</a></li>
-      <li><a href="#stake">Stake</a></li>
-      <li><a href="#transfer">Transfer</a></li>
+      <li><a href="#portfolio" aria-current="page">Portfolio</a></li>
+      <li><a href="#governance" aria-current="page">Governance</a></li>
+      <li><a href="#stake" aria-current="page">Stake</a></li>
+      <li><a href="#transfer" aria-current="page">Transfer</a></li>
 
       <li class="search-box">
-        <form role="search">
-          <input type="search" placeholder="Search…" aria-label="Search" />
+        <form role="search" aria-label="Site search">
+          <label for="search">Search</label>
+          <input type="search" id="search" placeholder="Search…" aria-label="Search">
           <button class="search-btn" aria-label="Search">🔍</button>
         </form>
       </li>
@@ -154,7 +154,7 @@
         </div>
       </article>
 
-      <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc">
+      <figure class="chart-wrap" role="img" aria-labelledby="chart-title chart-desc chart-table-caption">
         <div class="chart-filters">
           <button>1D</button>
           <button>1W</button>
@@ -209,7 +209,6 @@
         </svg>
       </figure>
 
-    </div>
     </div>
   </section>
 
@@ -390,14 +389,14 @@
           </span>
         </div>
         <div class="proposal-vote-buttons">
-          <button class="vote-btn yes">Yes</button>
-          <button class="vote-btn no">No</button>
-          <button class="vote-btn abstain">Abstain</button>
+          <button class="vote-btn yes" aria-label="vote option yes">Yes</button>
+          <button class="vote-btn no" aria-label="vote option no">No</button>
+          <button class="vote-btn abstain" aria-label="vote option abstain">Abstain</button>
         </div>
-        <div class="proposal-progressbar" aria-label="Votes progress">
-          <span class="bar yes" style="width:55%"></span>
-          <span class="bar no" style="width:35%"></span>
-          <span class="bar abstain" style="width:10%"></span>
+        <div class="proposal-progressbar">
+          <span class="bar yes" style="width:55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></span>
+          <span class="bar no" style="width:35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></span>
+          <span class="bar abstain" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></span>
         </div>
         <div class="proposal-vote-count">Total votes: <span>120</span></div>
       </div>
@@ -427,7 +426,7 @@
     <h2>Proposal Gallery</h2>
 
     <label for="proposal-progress">Progress</label>
-    <progress id="proposal-progress" value="5" max="8">62.5%</progress>
+    <progress id="proposal-progress" value="5" max="8" aria-describedby="progress-help">62.5%</progress>
   </section>
 
   <section class="table">
@@ -490,15 +489,16 @@
     <div class="stake-wrapper">
       <section class="stake" id="stake" aria-label="Stake tokens">
         <h2>Stake</h2>
-        <label>
-          <span>Select action</span>
-          <select name="stake-action">
-            <option value="stake">Stake</option>
-            <option value="unstake">Unstake</option>
-            <option value="restake">Re-stake</option>
-            <option value="claim">Claim</option>
-          </select>
-        </label>
+        <div class="field">
+          <label for="stake-action">Select Action
+            <select name="stake-action">
+              <option value="stake">Stake</option>
+              <option value="unstake">Unstake</option>
+              <option value="restake">Re-stake</option>
+              <option value="claim">Claim</option>
+            </select>
+          </label>
+        </div>
         <label>
           <span>Amount (Stake/Unstake only)</span>
           <input type="number" min="0" step="any" name="amount" placeholder="Enter amount">
@@ -510,31 +510,40 @@
       <section class="transfer" id="transfer" aria-label="Transfer tokens">
         <h2>Transfer</h2>
         <form>
-          <label>
-            <span>Token</span>
-            <select name="token">
-              <option value="usdc">USDC</option>
-              <option value="wbtc">WBTC</option>
-              <option value="sol">SOL</option>
-              <option value="jup">JUP</option>
-              <option value="jlp">JLP</option>
-            </select>
+          <div class="field">
+            <label for="token">Token</label>
+              <select id="token" name="token">
+                <option value="usdc">USDC</option>
+                <option value="wbtc">WBTC</option>
+                <option value="sol">SOL</option>
+                <option value="jup">JUP</option>
+                <option value="jlp">JLP</option>
+              </select>
+          </div>  
+          <label for="network">
+            <div class="field">
+              <br>
+              <label for="network">Network</label>
+              <input type="text" id="network" name="network" placeholder="e.g. Solana">
+            </div>
           </label>
-          <label>
-            <span>Network</span>
-            <input type="text" name="network" placeholder="e.g. Solana">
+          <label for="from">
+            <div class="field">
+              <label for="from">Sender address</label>
+              <input type="text" id="from" name="from" placeholder="Sender address">
+            </div>
           </label>
-          <label>
-            <span>From</span>
-            <input type="text" name="from" placeholder="Sender address">
+          <label for="to">
+            <div class="field">
+              <label for="to">Recipient address</label>
+              <input type="text" id="to" name="to" placeholder="Recipient address">
+            </div>
           </label>
-          <label>
-            <span>To</span>
-            <input type="text" name="to" placeholder="Recipient address">
-          </label>
-          <label>
-            <span>Amount</span>
-            <input type="number" name="amount" min="0" step="any" placeholder="Amount">
+          <label for="amount">
+            <div class="field">
+              <label for="amount">Amount</label>
+              <input type="number" name="amount" min="0.5" max="9999" step="any" placeholder="Amount">
+            </div>
           </label>
           <button type="submit" class="send-btn">Send</button>
         </form>
@@ -545,6 +554,13 @@
   <footer>
     <small> &copy; 2025 The Distributed Ledger &ndash; Built by Liquidated Degens.<br> For educational purposes
       only.</small>
+      <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!">
+    </a>
+      </p>
   </footer>
 
 </body>
