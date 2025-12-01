@@ -521,10 +521,9 @@
               </select>
           </div>  
           <label for="network">
-            <br
-            <span>Network</span>
             <div class="field">
-              <label for="network"><span class="example"></span></label>
+              <br>
+              <label for="network">Network</label>
               <input type="text" id="network" name="network" placeholder="e.g. Solana">
             </div>
           </label>
@@ -541,8 +540,10 @@
             </div>
           </label>
           <label for="amount">
-            <span>Amount</span>
-            <input type="number" name="amount" min="0.5" max="9999" step="any" placeholder="Amount">
+            <div class="field">
+              <label for="amount">Amount</label>
+              <input type="number" name="amount" min="0.5" max="9999" step="any" placeholder="Amount">
+            </div>
           </label>
           <button type="submit" class="send-btn">Send</button>
         </form>
