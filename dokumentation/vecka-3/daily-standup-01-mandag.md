@@ -1,7 +1,6 @@
 # Daily Standup: Måndag
 > Datum: 2025-12-01
 
-Fränvarande: Freddy
 
 Dagens scrum master: Bengt
 
@@ -12,10 +11,10 @@ Dagens scrum master: Bengt
 - **Idag har jag lärt mig** Att göra koden tillgänglig i efterhand
 
 ## Namn: Freddy
-- **Idag har jag** 
-- **Ett problem jag har** 
-- **Jag behöver hjälp med** 
-- **Idag har jag lärt mig** 
+- **Idag har jag**  Reviewat kod, gjort popupruta. Löst kodkonflikt med bengt.
+- **Ett problem jag har** Kodkonflikt men är löst
+- **Jag behöver hjälp med** Ingenting
+- **Idag har jag lärt mig** Göra pop-up
 
 ## Namn: Tim
 - **Idag har jag** Jag har progressbars till alla activ propossal ruto, och gjort dessa responsiva i olika lägen.
