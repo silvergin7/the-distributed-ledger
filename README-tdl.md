@@ -98,19 +98,27 @@ The dashboard has four main sections:
 ### Portfolio
 Overview of your holdings. Shows total value, what's staked, how much you're earning daily, and your realized and unrealized gains. All the data is simulated, but it works exactly like it would with real wallet data.
 
-
+<img src="readme-images/01.png" alt="The Distributed Ledger">
 
 ### Governance
 Vote on active network proposals. You can see how many votes each option has, create new proposals, and check the history of past proposals. The voting interface shows the breakdown of Yes/No/Abstain votes in real time.
 
+<img src="readme-images/02.png" alt="The Distributed Ledger">
+
 ### Stake
 Manage your tokens. Stake new amounts, unstake existing positions, restake to compound rewards, or claim your earnings. Works with SOL, USDC, WBTC, JUP, and JLP.
+
+<img src="readme-images/03.png" alt="The Distributed Ledger">
 
 ### Transfer
 Send tokens to another wallet. Pick your token type, enter the recipient address, the amount, and hit send. Simple.
 
+<img src="readme-images/04.png" alt="The Distributed Ledger">
+
 ### Responsive Layout
 The site adapts to any screen size. Navigation becomes a hamburger menu on mobile. Tables switch to card layout on small screens. Charts scale with the viewport.
+
+<img src="readme-images/05.png" alt="The Distributed Ledger">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
