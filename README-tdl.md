@@ -105,6 +105,11 @@ Vote on active network proposals. You can see how many votes each option has, cr
 
 <img src="readme-images/02.png" alt="The Distributed Ledger">
 
+### Voting pop-up
+Vote confirmation message pop-up. There's still no JavaScript but the pop-up is in the code (html/css) and with matching colors.
+
+<img src="readme-images/pop-up_image.png" alt="The Distributed Ledger">
+
 ### Stake
 Manage your tokens. Stake new amounts, unstake existing positions, restake to compound rewards, or claim your earnings. Works with SOL, USDC, WBTC, JUP, and JLP.
 
